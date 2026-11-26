@@ -17,3 +17,6 @@ Start with milestone 0 and 1; read existing files and use the actual dataset and
 
 ## Current clinical seed
 Use `docs/clinical/source-library-v0.2.draft.json` as the authoritative development seed. Do not use v0.1 as runtime input. Read `docs/clinical/MIGRATION-v0.2.md`; validate the current dataset and implement its response/presentation policies rather than remigrating the old source. The draft is not clinical-release content.
+
+## UI copy: strict no-filler rule
+Do not add explanatory microcopy, subtitles, helper paragraphs, introductory sentences, marketing copy, reassurance, redundant captions, or tooltips just to fill space. A heading and self-explanatory controls are sufficient. Every visible string must serve a necessary clinical, navigation, input, accessibility or safety function. No “Choose a language to get started”, “Select a category below”, “This question does not require an answer”, or descriptions that repeat a button label. Do not replace removed text with decorative elements. Preserve whitespace. Necessary clinical instructions, scale anchors, validation errors, privacy/export warnings and essential safety disclosures remain concise and localized. Place contextual help in About/Help unless required at the point of action. Apply to mobile app and editorial portal. Review each screen and remove redundant text before marking it complete.

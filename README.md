@@ -19,7 +19,7 @@ For contributors and coding agents, read [AGENTS.md](AGENTS.md) first, then:
 | [Architecture](docs/ARCHITECTURE.md) | Mobile, data, QR and editorial portal |
 | [Clinical content](docs/CLINICAL.md) | 45 locales, human validation and release gates |
 | [Implementation plan](docs/IMPLEMENTATION.md) | Ordered milestones and acceptance tests |
-| [Clinical source draft](docs/clinical/source-library-v0.1.draft.json) | 561 bilingual items; not approved |
+| [Clinical source draft](docs/clinical/source-library-v0.2.draft.json) | 579 bilingual items; not approved (v0.1 retained as archive) |
 | [Brand assets](assets/brand/README.md) | Logo and design tokens |
 | [Design references](docs/design/references/README.md) | Reference image inventory; original PNG upload pending |
 

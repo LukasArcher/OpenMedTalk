@@ -1,0 +1,19 @@
+# Architecture
+Proposed stack: pnpm workspaces, Expo/React Native + Expo Router mobile (Android and iOS), Next.js portal/public website, PostgreSQL (Neon proposed), Vercel proposed. Pick current compatible stable versions at implementation time and pin lockfile. No deployment until authorized. Mobile runtime has no backend calls; bundle released catalog and UI translations. Portal is editorial only, separate deployment and database. 
+```
+apps/mobile
+apps/portal
+packages/clinical
+packages/translations
+packages/schema
+packages/transfer
+assets/brand
+docs/design/references
+docs/clinical
+scripts
+```
+Shared pure TypeScript validation and domain logic, no React dependency in core. Use runtime schemas e.g. Zod or equivalent; no dynamic eval. Catalog immutable version, stable item IDs, source version/hash, categories/tags, response spec, log targets, risk, per-locale translation/review records, UI locale strings separate. One canonical English source with Danish co-reference; both reviewed and source changes invalidate dependent reviews. Patient display uses approved target only; do not silently fallback to English for clinical questions. Clinician log resolves validated UI-locale equivalent; block incompatible import/display or clearly show original when necessary. Use typed stable answer codes not localized labels; preserve exact question and answer text/version at time of asking or resolve immutable version. No inferred fields.
+Session: randomly generated ephemeral ID, item/version, locale, response kind/value, UTC timestamp, event ID, catalog version, optional correction metadata; no patient identity, no user/person role. State only in memory (not AsyncStorage, database, file, crash reports); store settings/favorites/recent language only. Protect app switcher previews where supported, clear on explicit end and process death; no promise of secure zeroization. No patient data analytics, logs or remote error payload. No automatic clipboard export; clipboard and QR expose health info, warning and explicit action. Clear app-owned clipboard on best-effort basis where feasible, do not falsely promise OS deletion.
+QR: schema/version, session ID, catalog version, event IDs, item versions, response codes, time, locale, bounded payload and integrity check (not authentication). Offline serialize compressed only with strict decompression and size limits; use standard QR, chunked multi-QR if payload exceeds safe tested size; no server or URL. Preview incoming data, verify version and allowed values before mutation, reject malicious/malformed/unknown payloads or preserve unreadable originals without silent reinterpretation. Import empty session after confirmation, populated session explicit replace or merge with warning to verify same patient; deduplicate by event ID, conflict explicit, never automatically combine. Provide export text preview and copy. No cross-patient auto merge. No real data in test.
+Map: locally bundled simplified vector geography with licensed source and attribution, accessible equivalent search/list, no online tiles, no auto-language assignment, test border cases and regions. Body SVG independently reviewed, correct anatomical laterality regardless RTL. 
+Portal: auth only for contributors; verified email and reviewer role assignment; least privilege, server-side authorization every mutation, audit trail, rate limiting, CSRF/session security, no patient records. Separate contributor profiles and consent-based public attribution. Postgres tables for source items/versions, locale, translation revisions, review votes, disputes, release snapshots, users/roles, audit. GitHub App least-privilege token server-only for PR publishing; release protected by human maintainer approval, no direct publishing from a vote. Git is source of truth for released snapshot; database for editorial work. CI schema validation and immutable versioning. 

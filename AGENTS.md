@@ -14,3 +14,6 @@ Read README.md, docs/PRODUCT.md, docs/DESIGN.md, docs/ARCHITECTURE.md, docs/CLIN
 - After each milestone: lint, typecheck, unit tests, relevant UI smoke tests; document actual results and outstanding blockers. Update progress in docs/IMPLEMENTATION.md. If constraints conflict, stop only the affected decision and implement independent work.
 
 Start with milestone 0 and 1; read existing files and use the actual dataset and reference assets if present. Do not substitute invented clinical content for missing source files.
+
+## Current clinical seed
+Use `docs/clinical/source-library-v0.2.draft.json` as the authoritative development seed. Do not use v0.1 as runtime input. Read `docs/clinical/MIGRATION-v0.2.md`; validate the current dataset and implement its response/presentation policies rather than remigrating the old source. The draft is not clinical-release content.

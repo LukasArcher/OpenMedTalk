@@ -1,0 +1,4 @@
+# Brand assets
+OpenMedTalk — Clinical communication without barriers.
+SVG files are flat vector reconstructions of the approved raster logo, not exact vector originals. Review typography and mark against the original before publication. Use the SVG masters for production exports after approval. Keep the approved original in this directory as approved-logo.png. Suggested exports: app-icon 1024 opaque, Android adaptive foreground 1024 transparent with safe zone and solid background, web/favicon 16/32/48, PWA 192/512, wordmark and lockup transparent PNG at 1x/2x. Do not use the historical NordAmbu names or symbols.
+Brand assets are not intended to grant rights to the official product name or logo; legal wording and trademark clearance remain pending. Tokens are proposed values matching agreed white/gray/petrol direction, not a separately approved palette.

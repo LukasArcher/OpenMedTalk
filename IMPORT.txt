@@ -1,0 +1,1 @@
+Extract into the root of LukasArcher/OpenMedTalk. Commit assets/brand and docs/design/references. Original reference boards are unmodified; they contain historical NordAmbu labels and illustrative text. Written docs override mockups. PNG/SVG exports are a flat reconstruction, not original vector artwork. Review before store distribution.

@@ -15,3 +15,6 @@ Status: planning only; no implementation/test results implied. Implement sequent
 - Settings survive restart, clinical sessions do not. No network required, no patient data to server.
 - 45 locale targets are configured; unverified clinical content cannot enter normal clinical release.
 - Build scripts repeatable; real test results and defects recorded; no claims of final readiness before gates.
+
+## Additional UI acceptance criterion
+Audit all screen copy in both light and dark modes and translated layouts. Remove every unnecessary subtitle, helper sentence, repeated heading description, decorative caption and promotional phrase; do not use explanatory microcopy to compensate for unclear navigation. Preserve required patient instructions, scale anchors, validation/error text, critical privacy/safety warnings and accessibility labels. Verify the resulting whitespace is intentional, not replaced with decoration.

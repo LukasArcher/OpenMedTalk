@@ -1,0 +1,146 @@
+{
+  "head": [
+    100,
+    24
+  ],
+  "face": [
+    100,
+    43
+  ],
+  "neck": [
+    100,
+    76
+  ],
+  "chest": [
+    100,
+    115
+  ],
+  "upper_back": [
+    100,
+    120
+  ],
+  "lower_back": [
+    100,
+    165
+  ],
+  "upper_abdomen": [
+    100,
+    146
+  ],
+  "lower_abdomen": [
+    100,
+    176
+  ],
+  "pelvis": [
+    100,
+    198
+  ],
+  "groin": [
+    100,
+    214
+  ],
+  "genitals": [
+    100,
+    221
+  ],
+  "right_shoulder": [
+    57,
+    99
+  ],
+  "right_upper_arm": [
+    48,
+    128
+  ],
+  "right_elbow": [
+    40,
+    161
+  ],
+  "right_forearm": [
+    31,
+    188
+  ],
+  "right_hand": [
+    24,
+    218
+  ],
+  "right_hip": [
+    72,
+    210
+  ],
+  "right_thigh": [
+    77,
+    250
+  ],
+  "right_knee": [
+    79,
+    293
+  ],
+  "right_lower_leg": [
+    76,
+    331
+  ],
+  "right_foot": [
+    70,
+    386
+  ],
+  "right_chest": [
+    81,
+    118
+  ],
+  "right_flank": [
+    74,
+    165
+  ],
+  "left_shoulder": [
+    143,
+    99
+  ],
+  "left_upper_arm": [
+    152,
+    128
+  ],
+  "left_elbow": [
+    160,
+    161
+  ],
+  "left_forearm": [
+    169,
+    188
+  ],
+  "left_hand": [
+    176,
+    218
+  ],
+  "left_hip": [
+    128,
+    210
+  ],
+  "left_thigh": [
+    123,
+    250
+  ],
+  "left_knee": [
+    121,
+    293
+  ],
+  "left_lower_leg": [
+    124,
+    331
+  ],
+  "left_foot": [
+    130,
+    386
+  ],
+  "left_chest": [
+    119,
+    118
+  ],
+  "left_flank": [
+    126,
+    165
+  ],
+  "diffuse": [
+    100,
+    155
+  ]
+}

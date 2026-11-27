@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0-draft",
+  "locale": "de",
+  "status": "ai_generated",
+  "scope": "development_only_not_for_patient_use",
+  "date": "2026-11-26",
+  "vendor": "OpenAI",
+  "model": "GPT-6 (Codex; exact serving model revision unavailable)",
+  "promptVersion": "openmedtalk-de-development-v1",
+  "sourceVersion": "0.2.0-draft",
+  "sourceHash": "19438fbaedc1b64005046613c87317e5e1afbabb19777ea02242fcf99b81ca2e",
+  "sourceLocales": [
+    "en",
+    "da"
+  ],
+  "patientItemCount": 579,
+  "independentSecondTranslation": false,
+  "backTranslation": false,
+  "humanReviewed": false,
+  "clinicalValidation": false,
+  "method": "Single AI-authored German draft from repository English source and Danish co-reference; formal Sie. Self-check only, not independent review. Includes patient questions/instructions, response labels, UI, navigation, groups.",
+  "remainingReview": [
+    "Independent linguistic and clinical review of every question and answer bundle",
+    "Patient comprehension and device layout testing",
+    "Source ambiguities remain subject to source review; no clinical release approval"
+  ]
+}

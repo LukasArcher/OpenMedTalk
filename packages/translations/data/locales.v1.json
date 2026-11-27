@@ -1,0 +1,627 @@
+[
+  {
+    "id": "da",
+    "name": "Danish",
+    "autonym": "Dansk",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Denmark",
+      "Danmark"
+    ],
+    "developmentAvailable": true
+  },
+  {
+    "id": "en",
+    "name": "English",
+    "autonym": "English",
+    "direction": "ltr",
+    "regions": [
+      "Europe",
+      "Americas",
+      "Oceania",
+      "Africa",
+      "Asia"
+    ],
+    "countries": [
+      "United Kingdom",
+      "USA",
+      "Australia",
+      "Canada"
+    ],
+    "developmentAvailable": true
+  },
+  {
+    "id": "ar",
+    "name": "Arabic",
+    "autonym": "العربية",
+    "direction": "rtl",
+    "regions": [
+      "Middle East",
+      "Africa"
+    ],
+    "countries": [
+      "Syria",
+      "Iraq",
+      "Egypt"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "uk",
+    "name": "Ukrainian",
+    "autonym": "Українська",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Ukraine"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "pl",
+    "name": "Polish",
+    "autonym": "Polski",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Poland"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "tr",
+    "name": "Turkish",
+    "autonym": "Türkçe",
+    "direction": "ltr",
+    "regions": [
+      "Europe",
+      "Middle East"
+    ],
+    "countries": [
+      "Türkiye",
+      "Turkey"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "fa-IR",
+    "name": "Persian",
+    "autonym": "فارسی",
+    "direction": "rtl",
+    "regions": [
+      "Middle East"
+    ],
+    "countries": [
+      "Iran"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "so",
+    "name": "Somali",
+    "autonym": "Soomaali",
+    "direction": "ltr",
+    "regions": [
+      "Africa"
+    ],
+    "countries": [
+      "Somalia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ru",
+    "name": "Russian",
+    "autonym": "Русский",
+    "direction": "ltr",
+    "regions": [
+      "Europe",
+      "Asia"
+    ],
+    "countries": [
+      "Russia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "bs",
+    "name": "Bosnian",
+    "autonym": "Bosanski",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Bosnia and Herzegovina"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ro",
+    "name": "Romanian",
+    "autonym": "Română",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Romania",
+      "Moldova"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "prs",
+    "name": "Dari",
+    "autonym": "دری",
+    "direction": "rtl",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Afghanistan"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ps",
+    "name": "Pashto",
+    "autonym": "پښتو",
+    "direction": "rtl",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Afghanistan",
+      "Pakistan"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ckb",
+    "name": "Sorani",
+    "autonym": "کوردیی ناوەندی",
+    "direction": "rtl",
+    "regions": [
+      "Middle East"
+    ],
+    "countries": [
+      "Iraq",
+      "Iran"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ur",
+    "name": "Urdu",
+    "autonym": "اردو",
+    "direction": "rtl",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Pakistan",
+      "India"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "de",
+    "name": "German",
+    "autonym": "Deutsch",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Germany",
+      "Austria",
+      "Switzerland"
+    ],
+    "developmentAvailable": true
+  },
+  {
+    "id": "sq",
+    "name": "Albanian",
+    "autonym": "Shqip",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Albania",
+      "Kosovo"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "hr",
+    "name": "Croatian",
+    "autonym": "Hrvatski",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Croatia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "sr",
+    "name": "Serbian",
+    "autonym": "Српски / Srpski",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Serbia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "kmr",
+    "name": "Kurmanji",
+    "autonym": "Kurmancî",
+    "direction": "ltr",
+    "regions": [
+      "Middle East"
+    ],
+    "countries": [
+      "Türkiye",
+      "Syria",
+      "Iraq"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ti",
+    "name": "Tigrinya",
+    "autonym": "ትግርኛ",
+    "direction": "ltr",
+    "regions": [
+      "Africa"
+    ],
+    "countries": [
+      "Eritrea",
+      "Ethiopia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "am",
+    "name": "Amharic",
+    "autonym": "አማርኛ",
+    "direction": "ltr",
+    "regions": [
+      "Africa"
+    ],
+    "countries": [
+      "Ethiopia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "vi",
+    "name": "Vietnamese",
+    "autonym": "Tiếng Việt",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Vietnam"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "zh-Hans",
+    "name": "Chinese, Simplified",
+    "autonym": "简体中文",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "China",
+      "Singapore"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "th",
+    "name": "Thai",
+    "autonym": "ไทย",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Thailand"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ta",
+    "name": "Tamil",
+    "autonym": "தமிழ்",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "India",
+      "Sri Lanka"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "hi",
+    "name": "Hindi",
+    "autonym": "हिन्दी",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "India"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "bn",
+    "name": "Bengali",
+    "autonym": "বাংলা",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Bangladesh",
+      "India"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "bg",
+    "name": "Bulgarian",
+    "autonym": "Български",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Bulgaria"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "lt",
+    "name": "Lithuanian",
+    "autonym": "Lietuvių",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Lithuania"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "fr",
+    "name": "French",
+    "autonym": "Français",
+    "direction": "ltr",
+    "regions": [
+      "Europe",
+      "Africa",
+      "Americas"
+    ],
+    "countries": [
+      "France",
+      "Canada",
+      "Belgium"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "es",
+    "name": "Spanish",
+    "autonym": "Español",
+    "direction": "ltr",
+    "regions": [
+      "Europe",
+      "Americas"
+    ],
+    "countries": [
+      "Spain",
+      "Mexico"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "pt",
+    "name": "Portuguese",
+    "autonym": "Português",
+    "direction": "ltr",
+    "regions": [
+      "Europe",
+      "Americas",
+      "Africa"
+    ],
+    "countries": [
+      "Portugal",
+      "Brazil"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "it",
+    "name": "Italian",
+    "autonym": "Italiano",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Italy"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "el",
+    "name": "Greek",
+    "autonym": "Ελληνικά",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Greece",
+      "Cyprus"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "hu",
+    "name": "Hungarian",
+    "autonym": "Magyar",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Hungary"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "cs",
+    "name": "Czech",
+    "autonym": "Čeština",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Czechia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "sk",
+    "name": "Slovak",
+    "autonym": "Slovenčina",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Slovakia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "yue-Hant",
+    "name": "Cantonese",
+    "autonym": "粵語（繁體）",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Hong Kong",
+      "China"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ka",
+    "name": "Georgian",
+    "autonym": "ქართული",
+    "direction": "ltr",
+    "regions": [
+      "Europe",
+      "Asia"
+    ],
+    "countries": [
+      "Georgia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "kl",
+    "name": "Greenlandic",
+    "autonym": "Kalaallisut",
+    "direction": "ltr",
+    "regions": [
+      "Americas"
+    ],
+    "countries": [
+      "Greenland"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "sw",
+    "name": "Swahili",
+    "autonym": "Kiswahili",
+    "direction": "ltr",
+    "regions": [
+      "Africa"
+    ],
+    "countries": [
+      "Kenya",
+      "Tanzania"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "my",
+    "name": "Burmese",
+    "autonym": "မြန်မာဘာသာ",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Myanmar"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "lv",
+    "name": "Latvian",
+    "autonym": "Latviešu",
+    "direction": "ltr",
+    "regions": [
+      "Europe"
+    ],
+    "countries": [
+      "Latvia"
+    ],
+    "developmentAvailable": false
+  },
+  {
+    "id": "ne",
+    "name": "Nepali",
+    "autonym": "नेपाली",
+    "direction": "ltr",
+    "regions": [
+      "Asia"
+    ],
+    "countries": [
+      "Nepal"
+    ],
+    "developmentAvailable": false
+  }
+]

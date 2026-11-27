@@ -1,4 +1,5 @@
 # Architecture
+Mobile implementation: Expo SDK 58 / React Native 0.88 with Expo Router, pure TypeScript domain/validation/transfer modules and versioned JSON content. pnpm uses isolated dependencies and Expo's standard monorepo resolver. UI dictionaries and patient text/answer bundles are separate from logic; sessions and pending transfers are memory-only. Current packaging and device verification limitations are recorded in IMPLEMENTATION.md. No portal, database, authentication or backend has been implemented.
 Proposed stack: pnpm workspaces, Expo/React Native + Expo Router mobile (Android and iOS), Next.js portal/public website, PostgreSQL (Neon proposed), Vercel proposed. Pick current compatible stable versions at implementation time and pin lockfile. No deployment until authorized. Mobile runtime has no backend calls; bundle released catalog and UI translations. Portal is editorial only, separate deployment and database. 
 ```
 apps/mobile

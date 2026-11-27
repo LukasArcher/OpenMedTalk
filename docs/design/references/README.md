@@ -1,4 +1,5 @@
 # Approved design direction — source images
+Inventory verified 2026-11-26: all eight reference PNGs below and `assets/brand/approved-logo.png` are present and have been visually inspected for the mobile implementation.
 Original eight reference boards should be placed here using the filenames below. They were approved as style direction, not pixel-exact specification. Written requirements in PRODUCT.md and DESIGN.md override all conflicting text. Some boards still say NordAmbu and mix languages; use OpenMedTalk identity and localize all patient controls. The revised time/meal board supersedes earlier board. Do not implement multiple meal questions together, refusal buttons, patient identification, fixed question flows, inferred findings or clinical status colors.
 - 01-onboarding.png
 - 02-language-picker.png

@@ -1,0 +1,5427 @@
+{
+  "version": "0.2.0-draft",
+  "status": "draft_not_for_clinical_use",
+  "provenance": "Repository English/Danish source; German AI-generated development draft, not independently translated, back-translated or human reviewed. See provenance.de.v1.json.",
+  "sourceHash": "19438fbaedc1b64005046613c87317e5e1afbabb19777ea02242fcf99b81ca2e",
+  "responseTypes": {
+    "bool": {
+      "kind": "single_choice",
+      "options": [
+        {
+          "id": "yes",
+          "label": {
+            "da": "Ja",
+            "en": "Yes",
+            "de": "Ja"
+          }
+        },
+        {
+          "id": "no",
+          "label": {
+            "da": "Nej",
+            "en": "No",
+            "de": "Nein"
+          }
+        }
+      ],
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "presentation": "two_large_equal_choices_side_by_side",
+      "secondaryOptionsPresentation": "two_smaller_choices_below",
+      "confirmSelection": false,
+      "afterAnswer": "return_to_question_list",
+      "initialSelection": null
+    },
+    "info": {
+      "kind": "instruction",
+      "recordsAnswer": false,
+      "presentation": "large_localized_text",
+      "dismissAction": "close",
+      "recordAcknowledgement": false
+    },
+    "body": {
+      "kind": "body_map",
+      "multiple": true,
+      "views": [
+        {
+          "id": "front",
+          "label": {
+            "da": "Forside",
+            "en": "Front",
+            "de": "Vorderseite"
+          }
+        },
+        {
+          "id": "back",
+          "label": {
+            "da": "Bagside",
+            "en": "Back",
+            "de": "Rückseite"
+          }
+        }
+      ],
+      "regions": [
+        {
+          "id": "head",
+          "label": {
+            "da": "Hoved",
+            "en": "Head",
+            "de": "Kopf"
+          }
+        },
+        {
+          "id": "face",
+          "label": {
+            "da": "Ansigt",
+            "en": "Face",
+            "de": "Gesicht"
+          }
+        },
+        {
+          "id": "neck",
+          "label": {
+            "da": "Hals/nakke",
+            "en": "Neck",
+            "de": "Hals/Nacken"
+          }
+        },
+        {
+          "id": "chest",
+          "label": {
+            "da": "Brystkasse",
+            "en": "Chest",
+            "de": "Brustkorb"
+          }
+        },
+        {
+          "id": "upper_back",
+          "label": {
+            "da": "Øvre ryg",
+            "en": "Upper back",
+            "de": "Oberer Rücken"
+          }
+        },
+        {
+          "id": "lower_back",
+          "label": {
+            "da": "Lænd",
+            "en": "Lower back",
+            "de": "Unterer Rücken"
+          }
+        },
+        {
+          "id": "upper_abdomen",
+          "label": {
+            "da": "Øvre mave",
+            "en": "Upper abdomen",
+            "de": "Oberbauch"
+          }
+        },
+        {
+          "id": "lower_abdomen",
+          "label": {
+            "da": "Nedre mave",
+            "en": "Lower abdomen",
+            "de": "Unterbauch"
+          }
+        },
+        {
+          "id": "pelvis",
+          "label": {
+            "da": "Bækken",
+            "en": "Pelvis",
+            "de": "Becken"
+          }
+        },
+        {
+          "id": "groin",
+          "label": {
+            "da": "Lyske",
+            "en": "Groin",
+            "de": "Leiste"
+          }
+        },
+        {
+          "id": "genitals",
+          "label": {
+            "da": "Kønsorganer",
+            "en": "Genitals",
+            "de": "Geschlechtsorgane"
+          }
+        },
+        {
+          "id": "right_shoulder",
+          "label": {
+            "da": "Højre skulder",
+            "en": "Right shoulder",
+            "de": "Rechte Schulter"
+          }
+        },
+        {
+          "id": "right_upper_arm",
+          "label": {
+            "da": "Højre overarm",
+            "en": "Right upper arm",
+            "de": "Rechter Oberarm"
+          }
+        },
+        {
+          "id": "right_elbow",
+          "label": {
+            "da": "Højre albue",
+            "en": "Right elbow",
+            "de": "Rechter Ellenbogen"
+          }
+        },
+        {
+          "id": "right_forearm",
+          "label": {
+            "da": "Højre underarm",
+            "en": "Right forearm",
+            "de": "Rechter Unterarm"
+          }
+        },
+        {
+          "id": "right_hand",
+          "label": {
+            "da": "Højre hånd",
+            "en": "Right hand",
+            "de": "Rechte Hand"
+          }
+        },
+        {
+          "id": "right_hip",
+          "label": {
+            "da": "Højre hofte",
+            "en": "Right hip",
+            "de": "Rechte Hüfte"
+          }
+        },
+        {
+          "id": "right_thigh",
+          "label": {
+            "da": "Højre lår",
+            "en": "Right thigh",
+            "de": "Rechter Oberschenkel"
+          }
+        },
+        {
+          "id": "right_knee",
+          "label": {
+            "da": "Højre knæ",
+            "en": "Right knee",
+            "de": "Rechtes Knie"
+          }
+        },
+        {
+          "id": "right_lower_leg",
+          "label": {
+            "da": "Højre underben",
+            "en": "Right lower leg",
+            "de": "Rechter Unterschenkel"
+          }
+        },
+        {
+          "id": "right_foot",
+          "label": {
+            "da": "Højre fod",
+            "en": "Right foot",
+            "de": "Rechter Fuß"
+          }
+        },
+        {
+          "id": "right_chest",
+          "label": {
+            "da": "Højre brysthalvdel",
+            "en": "Right side of chest",
+            "de": "Rechte Brustkorbseite"
+          }
+        },
+        {
+          "id": "right_flank",
+          "label": {
+            "da": "Højre flanke",
+            "en": "Right flank",
+            "de": "Rechte Flanke"
+          }
+        },
+        {
+          "id": "left_shoulder",
+          "label": {
+            "da": "Venstre skulder",
+            "en": "Left shoulder",
+            "de": "Linke Schulter"
+          }
+        },
+        {
+          "id": "left_upper_arm",
+          "label": {
+            "da": "Venstre overarm",
+            "en": "Left upper arm",
+            "de": "Linker Oberarm"
+          }
+        },
+        {
+          "id": "left_elbow",
+          "label": {
+            "da": "Venstre albue",
+            "en": "Left elbow",
+            "de": "Linker Ellenbogen"
+          }
+        },
+        {
+          "id": "left_forearm",
+          "label": {
+            "da": "Venstre underarm",
+            "en": "Left forearm",
+            "de": "Linker Unterarm"
+          }
+        },
+        {
+          "id": "left_hand",
+          "label": {
+            "da": "Venstre hånd",
+            "en": "Left hand",
+            "de": "Linke Hand"
+          }
+        },
+        {
+          "id": "left_hip",
+          "label": {
+            "da": "Venstre hofte",
+            "en": "Left hip",
+            "de": "Linke Hüfte"
+          }
+        },
+        {
+          "id": "left_thigh",
+          "label": {
+            "da": "Venstre lår",
+            "en": "Left thigh",
+            "de": "Linker Oberschenkel"
+          }
+        },
+        {
+          "id": "left_knee",
+          "label": {
+            "da": "Venstre knæ",
+            "en": "Left knee",
+            "de": "Linkes Knie"
+          }
+        },
+        {
+          "id": "left_lower_leg",
+          "label": {
+            "da": "Venstre underben",
+            "en": "Left lower leg",
+            "de": "Linker Unterschenkel"
+          }
+        },
+        {
+          "id": "left_foot",
+          "label": {
+            "da": "Venstre fod",
+            "en": "Left foot",
+            "de": "Linker Fuß"
+          }
+        },
+        {
+          "id": "left_chest",
+          "label": {
+            "da": "Venstre brysthalvdel",
+            "en": "Left side of chest",
+            "de": "Linke Brustkorbseite"
+          }
+        },
+        {
+          "id": "left_flank",
+          "label": {
+            "da": "Venstre flanke",
+            "en": "Left flank",
+            "de": "Linke Flanke"
+          }
+        },
+        {
+          "id": "diffuse",
+          "label": {
+            "da": "Flere steder / hele kroppen",
+            "en": "Multiple areas / whole body",
+            "de": "Mehrere Bereiche / ganzer Körper"
+          }
+        }
+      ],
+      "coordinateSystem": "normalized image coordinates; optional in addition to region ID",
+      "laterality": "patient anatomical right and left; independent of display orientation",
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "confirmSelection": true,
+      "initialSelection": null,
+      "frontBackLabelsVisible": true,
+      "mirrorForRTL": false
+    },
+    "nrs": {
+      "kind": "integer_scale",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "anchors": [
+        {
+          "value": 0,
+          "label": {
+            "da": "Ingen smerter",
+            "en": "No pain",
+            "de": "Keine Schmerzen"
+          }
+        },
+        {
+          "value": 10,
+          "label": {
+            "da": "Værst tænkelige smerter",
+            "en": "Worst imaginable pain",
+            "de": "Stärkste vorstellbare Schmerzen"
+          }
+        }
+      ],
+      "requireExplicitSelection": true,
+      "additionalOptions": "common_nonanswers",
+      "recordsAnswer": true,
+      "confirmSelection": true,
+      "initialSelection": null,
+      "presentation": "integer_slider_with_anchors",
+      "displayName": {
+        "da": "Smerteintensitet",
+        "en": "Pain intensity",
+        "de": "Schmerzstärke"
+      }
+    },
+    "elapsed": {
+      "kind": "elapsed_time",
+      "units": [
+        {
+          "id": "min",
+          "label": {
+            "da": "Minutter",
+            "en": "Minutes",
+            "de": "Minuten"
+          }
+        },
+        {
+          "id": "h",
+          "label": {
+            "da": "Timer",
+            "en": "Hours",
+            "de": "Stunden"
+          }
+        },
+        {
+          "id": "d",
+          "label": {
+            "da": "Dage",
+            "en": "Days",
+            "de": "Tage"
+          }
+        },
+        {
+          "id": "wk",
+          "label": {
+            "da": "Uger",
+            "en": "Weeks",
+            "de": "Wochen"
+          }
+        },
+        {
+          "id": "mo",
+          "label": {
+            "da": "Måneder",
+            "en": "Months",
+            "de": "Monate"
+          }
+        },
+        {
+          "id": "yr",
+          "label": {
+            "da": "År",
+            "en": "Years",
+            "de": "Jahre"
+          }
+        }
+      ],
+      "allowApproximate": true,
+      "allowAbsoluteLocalDateTime": true,
+      "min": 0,
+      "captureReferenceTime": true,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true,
+      "presentation": "large_value_and_explicit_unit",
+      "requireUnitSelection": true,
+      "initialUnit": null
+    },
+    "duration": {
+      "kind": "duration",
+      "units": [
+        {
+          "id": "s",
+          "label": {
+            "da": "Sekunder",
+            "en": "Seconds",
+            "de": "Sekunden"
+          }
+        },
+        {
+          "id": "min",
+          "label": {
+            "da": "Minutter",
+            "en": "Minutes",
+            "de": "Minuten"
+          }
+        },
+        {
+          "id": "h",
+          "label": {
+            "da": "Timer",
+            "en": "Hours",
+            "de": "Stunden"
+          }
+        },
+        {
+          "id": "d",
+          "label": {
+            "da": "Dage",
+            "en": "Days",
+            "de": "Tage"
+          }
+        },
+        {
+          "id": "wk",
+          "label": {
+            "da": "Uger",
+            "en": "Weeks",
+            "de": "Wochen"
+          }
+        },
+        {
+          "id": "mo",
+          "label": {
+            "da": "Måneder",
+            "en": "Months",
+            "de": "Monate"
+          }
+        },
+        {
+          "id": "yr",
+          "label": {
+            "da": "År",
+            "en": "Years",
+            "de": "Jahre"
+          }
+        }
+      ],
+      "allowApproximate": true,
+      "min": 0,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true,
+      "presentation": "large_value_and_explicit_unit",
+      "requireUnitSelection": true,
+      "initialUnit": null
+    },
+    "date": {
+      "kind": "date",
+      "allowApproximate": true,
+      "storePrecision": true,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true
+    },
+    "age": {
+      "kind": "quantity",
+      "units": [
+        {
+          "id": "d",
+          "label": {
+            "da": "Dage",
+            "en": "Days",
+            "de": "Tage"
+          }
+        },
+        {
+          "id": "wk",
+          "label": {
+            "da": "Uger",
+            "en": "Weeks",
+            "de": "Wochen"
+          }
+        },
+        {
+          "id": "mo",
+          "label": {
+            "da": "Måneder",
+            "en": "Months",
+            "de": "Monate"
+          }
+        },
+        {
+          "id": "yr",
+          "label": {
+            "da": "År",
+            "en": "Years",
+            "de": "Jahre"
+          }
+        }
+      ],
+      "min": 0,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true,
+      "presentation": "large_value_and_explicit_unit",
+      "requireUnitSelection": true,
+      "initialUnit": null
+    },
+    "temperature": {
+      "kind": "number",
+      "unit": {
+        "id": "C",
+        "label": {
+          "da": "°C",
+          "en": "°C",
+          "de": "°C"
+        }
+      },
+      "allowDecimal": true,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true
+    },
+    "glucose": {
+      "kind": "quantity",
+      "units": [
+        {
+          "id": "mmol/L",
+          "label": {
+            "da": "mmol/L",
+            "en": "mmol/L",
+            "de": "mmol/L"
+          }
+        },
+        {
+          "id": "mg/dL",
+          "label": {
+            "da": "mg/dL",
+            "en": "mg/dL",
+            "de": "mg/dL"
+          }
+        }
+      ],
+      "allowDecimal": true,
+      "min": 0,
+      "requireUnitSelection": true,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true,
+      "presentation": "large_value_and_explicit_unit",
+      "initialUnit": null
+    },
+    "count": {
+      "kind": "integer",
+      "min": 0,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "confirmSelection": true,
+      "initialSelection": null,
+      "presentation": "large_stepper_or_numeric_keypad"
+    },
+    "weeks": {
+      "kind": "integer",
+      "min": 0,
+      "unit": {
+        "id": "wk",
+        "label": {
+          "da": "Uger",
+          "en": "Weeks",
+          "de": "Wochen"
+        }
+      },
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true
+    },
+    "minutes": {
+      "kind": "number",
+      "min": 0,
+      "unit": {
+        "id": "min",
+        "label": {
+          "da": "Minutter",
+          "en": "Minutes",
+          "de": "Minuten"
+        }
+      },
+      "allowDecimal": true,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true
+    },
+    "seconds": {
+      "kind": "number",
+      "min": 0,
+      "unit": {
+        "id": "s",
+        "label": {
+          "da": "Sekunder",
+          "en": "Seconds",
+          "de": "Sekunden"
+        }
+      },
+      "allowDecimal": true,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true
+    },
+    "metres": {
+      "kind": "number",
+      "min": 0,
+      "unit": {
+        "id": "m",
+        "label": {
+          "da": "Meter",
+          "en": "Metres",
+          "de": "Meter"
+        }
+      },
+      "allowDecimal": true,
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "initialSelection": null,
+      "confirmSelection": true
+    },
+    "onset_interval": {
+      "kind": "single_choice",
+      "options": [
+        {
+          "id": "within_1h",
+          "label": {
+            "da": "Inden for den sidste time",
+            "en": "Within the last hour",
+            "de": "Innerhalb der letzten Stunde"
+          }
+        },
+        {
+          "id": "over_1h_to_6h",
+          "label": {
+            "da": "1–6 timer siden",
+            "en": "1–6 hours ago",
+            "de": "Vor 1–6 Stunden"
+          }
+        },
+        {
+          "id": "over_6h_to_24h",
+          "label": {
+            "da": "6–24 timer siden",
+            "en": "6–24 hours ago",
+            "de": "Vor 6–24 Stunden"
+          }
+        },
+        {
+          "id": "over_24h_under_7d",
+          "label": {
+            "da": "For flere dage siden (under en uge)",
+            "en": "Several days ago (less than a week)",
+            "de": "Vor mehreren Tagen (weniger als einer Woche)"
+          }
+        },
+        {
+          "id": "at_least_7d",
+          "label": {
+            "da": "For en uge siden eller længere",
+            "en": "A week ago or longer",
+            "de": "Vor einer Woche oder länger"
+          }
+        }
+      ],
+      "additionalOptions": "common_nonanswers",
+      "requireExplicitSelection": true,
+      "recordsAnswer": true,
+      "captureReferenceTime": true,
+      "interpretation": "Coarse patient-reported category only. Intervals are disjoint: [0,1h], (1h,6h], (6h,24h], (24h,7d), [7d,infinity). Do not calculate exact onset or substitute for last known well.",
+      "presentation": "large_single_choice_rows",
+      "confirmSelection": true,
+      "initialSelection": null
+    }
+  },
+  "commonNonanswers": [
+    {
+      "id": "unknown",
+      "label": {
+        "da": "Ved ikke",
+        "en": "Do not know",
+        "de": "Weiß ich nicht"
+      }
+    },
+    {
+      "id": "not_understood",
+      "label": {
+        "da": "Forstår ikke",
+        "en": "Do not understand",
+        "de": "Verstehe ich nicht"
+      }
+    }
+  ],
+  "items": {
+    "intro_001": {
+      "version": 1,
+      "text": {
+        "en": "I am here to help you.",
+        "da": "Jeg er her for at hjælpe dig.",
+        "de": "Ich bin hier, um Ihnen zu helfen."
+      }
+    },
+    "intro_002": {
+      "version": 1,
+      "text": {
+        "en": "I work on the ambulance crew.",
+        "da": "Jeg arbejder i ambulancen.",
+        "de": "Ich gehöre zum Rettungsdienst."
+      }
+    },
+    "intro_003": {
+      "version": 1,
+      "text": {
+        "en": "I am a doctor.",
+        "da": "Jeg er læge.",
+        "de": "Ich bin Arzt oder Ärztin."
+      }
+    },
+    "intro_004": {
+      "version": 1,
+      "text": {
+        "en": "I am a nurse.",
+        "da": "Jeg er sygeplejerske.",
+        "de": "Ich bin Pflegekraft."
+      }
+    },
+    "intro_005": {
+      "version": 1,
+      "text": {
+        "en": "We would like to ask you some questions.",
+        "da": "Vi vil gerne stille dig nogle spørgsmål.",
+        "de": "Wir möchten Ihnen einige Fragen stellen."
+      }
+    },
+    "intro_006": {
+      "version": 1,
+      "text": {
+        "en": "You can answer by tapping the screen.",
+        "da": "Du kan svare ved at trykke på skærmen.",
+        "de": "Sie können antworten, indem Sie auf den Bildschirm tippen."
+      }
+    },
+    "intro_007": {
+      "version": 1,
+      "text": {
+        "en": "Do you understand the language on the screen?",
+        "da": "Forstår du sproget på skærmen?",
+        "de": "Verstehen Sie die Sprache auf dem Bildschirm?"
+      }
+    },
+    "intro_008": {
+      "version": 1,
+      "text": {
+        "en": "Can you read this?",
+        "da": "Kan du læse dette?",
+        "de": "Können Sie das lesen?"
+      }
+    },
+    "intro_009": {
+      "version": 1,
+      "text": {
+        "en": "Can you see the text clearly?",
+        "da": "Kan du se teksten tydeligt?",
+        "de": "Können Sie den Text deutlich sehen?"
+      }
+    },
+    "intro_010": {
+      "version": 1,
+      "text": {
+        "en": "Can you hear me?",
+        "da": "Kan du høre mig?",
+        "de": "Können Sie mich hören?"
+      }
+    },
+    "intro_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you need an interpreter?",
+        "da": "Har du brug for en tolk?",
+        "de": "Benötigen Sie einen Dolmetscher?"
+      }
+    },
+    "intro_012": {
+      "version": 1,
+      "text": {
+        "en": "Would you like a break?",
+        "da": "Vil du have en pause?",
+        "de": "Möchten Sie eine Pause?"
+      }
+    },
+    "intro_013": {
+      "version": 1,
+      "text": {
+        "en": "Would you prefer to speak without other people present?",
+        "da": "Vil du helst tale uden andre til stede?",
+        "de": "Möchten Sie lieber ohne andere anwesende Personen sprechen?"
+      }
+    },
+    "intro_014": {
+      "version": 1,
+      "text": {
+        "en": "Is there something important we have not asked about yet?",
+        "da": "Er der noget vigtigt, vi endnu ikke har spurgt om?",
+        "de": "Gibt es etwas Wichtiges, wonach wir noch nicht gefragt haben?"
+      }
+    },
+    "intro_015": {
+      "version": 1,
+      "text": {
+        "en": "Please show me what you mean.",
+        "da": "Vis mig gerne, hvad du mener.",
+        "de": "Bitte zeigen Sie mir, was Sie meinen."
+      }
+    },
+    "intro_016": {
+      "version": 1,
+      "text": {
+        "en": "We will try to arrange an interpreter.",
+        "da": "Vi vil forsøge at skaffe en tolk.",
+        "de": "Wir werden versuchen, einen Dolmetscher zu organisieren."
+      }
+    },
+    "intro_017": {
+      "version": 1,
+      "text": {
+        "en": "Please wait a moment.",
+        "da": "Vent et øjeblik, tak.",
+        "de": "Bitte warten Sie einen Moment."
+      }
+    },
+    "intro_018": {
+      "version": 1,
+      "text": {
+        "en": "Are you the person who needs help?",
+        "da": "Er det dig, der har brug for hjælp?",
+        "de": "Sind Sie die Person, die Hilfe benötigt?"
+      }
+    },
+    "intro_019": {
+      "version": 1,
+      "text": {
+        "en": "Would you like someone you know to stay with you?",
+        "da": "Vil du gerne have en person, du kender, hos dig?",
+        "de": "Möchten Sie, dass eine Ihnen bekannte Person bei Ihnen bleibt?"
+      }
+    },
+    "general_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel unwell?",
+        "da": "Føler du dig syg?",
+        "de": "Fühlen Sie sich unwohl?"
+      }
+    },
+    "general_002": {
+      "version": 1,
+      "text": {
+        "en": "Are you more tired than usual?",
+        "da": "Er du mere træt end normalt?",
+        "de": "Sind Sie müder als sonst?"
+      }
+    },
+    "general_003": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel weak throughout your body?",
+        "da": "Føler du dig svag i hele kroppen?",
+        "de": "Fühlen Sie sich am ganzen Körper schwach?"
+      }
+    },
+    "general_004": {
+      "version": 1,
+      "text": {
+        "en": "Have you had a fever?",
+        "da": "Har du haft feber?",
+        "de": "Hatten Sie Fieber?"
+      }
+    },
+    "general_005": {
+      "version": 1,
+      "text": {
+        "en": "Have you measured your temperature?",
+        "da": "Har du målt din temperatur?",
+        "de": "Haben Sie Ihre Temperatur gemessen?"
+      }
+    },
+    "general_006": {
+      "version": 1,
+      "text": {
+        "en": "What temperature did you measure in degrees Celsius?",
+        "da": "Hvilken temperatur målte du i grader Celsius?",
+        "de": "Welche Temperatur haben Sie in Grad Celsius gemessen?"
+      }
+    },
+    "general_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you had chills?",
+        "da": "Har du haft kulderystelser?",
+        "de": "Hatten Sie Schüttelfrost?"
+      }
+    },
+    "general_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you been sweating more than usual?",
+        "da": "Har du svedt usædvanligt meget?",
+        "de": "Haben Sie mehr geschwitzt als sonst?"
+      }
+    },
+    "general_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you had night sweats?",
+        "da": "Har du haft nattesved?",
+        "de": "Haben Sie nachts geschwitzt?"
+      }
+    },
+    "general_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you lost your appetite?",
+        "da": "Har du mistet appetitten?",
+        "de": "Haben Sie Ihren Appetit verloren?"
+      }
+    },
+    "general_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you lost weight without trying?",
+        "da": "Har du tabt dig uden at ville det?",
+        "de": "Haben Sie abgenommen, ohne es zu beabsichtigen?"
+      }
+    },
+    "general_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you gained weight rapidly recently?",
+        "da": "Har du taget hurtigt på i vægt for nylig?",
+        "de": "Haben Sie in letzter Zeit schnell zugenommen?"
+      }
+    },
+    "general_013": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel very thirsty?",
+        "da": "Føler du dig meget tørstig?",
+        "de": "Haben Sie großen Durst?"
+      }
+    },
+    "general_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you been ill in the days leading up to this?",
+        "da": "Har du været syg i dagene op til dette?",
+        "de": "Waren Sie in den Tagen davor krank?"
+      }
+    },
+    "general_015": {
+      "version": 1,
+      "text": {
+        "en": "Are these symptoms new to you?",
+        "da": "Er symptomerne nye for dig?",
+        "de": "Sind diese Beschwerden für Sie neu?"
+      }
+    },
+    "general_016": {
+      "version": 1,
+      "text": {
+        "en": "Have you had similar symptoms before?",
+        "da": "Har du haft lignende symptomer før?",
+        "de": "Hatten Sie schon einmal ähnliche Beschwerden?"
+      }
+    },
+    "general_017": {
+      "version": 1,
+      "text": {
+        "en": "Have your symptoms become worse?",
+        "da": "Er dine symptomer blevet værre?",
+        "de": "Sind Ihre Beschwerden schlimmer geworden?"
+      }
+    },
+    "general_018": {
+      "version": 1,
+      "text": {
+        "en": "Have your symptoms improved?",
+        "da": "Er dine symptomer blevet bedre?",
+        "de": "Haben sich Ihre Beschwerden gebessert?"
+      }
+    },
+    "general_019": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously been examined for these symptoms?",
+        "da": "Er du blevet undersøgt for disse symptomer tidligere?",
+        "de": "Wurden Sie wegen dieser Beschwerden schon einmal untersucht?"
+      }
+    },
+    "pain_001": {
+      "version": 1,
+      "text": {
+        "en": "Are you in pain right now?",
+        "da": "Har du smerter lige nu?",
+        "de": "Haben Sie gerade Schmerzen?"
+      }
+    },
+    "pain_002": {
+      "version": 1,
+      "text": {
+        "en": "Point to where you feel pain.",
+        "da": "Peg på, hvor du har ondt.",
+        "de": "Zeigen Sie, wo Sie Schmerzen haben."
+      }
+    },
+    "pain_003": {
+      "version": 1,
+      "text": {
+        "en": "Point to where the pain spreads.",
+        "da": "Peg på, hvor smerten breder sig hen.",
+        "de": "Zeigen Sie, wohin die Schmerzen ausstrahlen."
+      }
+    },
+    "pain_004": {
+      "version": 1,
+      "text": {
+        "en": "How severe is your pain right now, from 0 to 10?",
+        "da": "Hvor stærk er smerten lige nu fra 0 til 10?",
+        "de": "Wie stark sind Ihre Schmerzen gerade auf einer Skala von 0 bis 10?"
+      }
+    },
+    "pain_005": {
+      "version": 1,
+      "text": {
+        "en": "How severe was your pain at its worst, from 0 to 10?",
+        "da": "Hvor stærk var smerten, da den var værst, fra 0 til 10?",
+        "de": "Wie stark waren Ihre Schmerzen im schlimmsten Moment auf einer Skala von 0 bis 10?"
+      }
+    },
+    "pain_006": {
+      "version": 1,
+      "text": {
+        "en": "Did the pain start suddenly?",
+        "da": "Begyndte smerten pludseligt?",
+        "de": "Haben die Schmerzen plötzlich begonnen?"
+      }
+    },
+    "pain_007": {
+      "version": 2,
+      "text": {
+        "en": "When did the pain start?",
+        "da": "Hvornår begyndte smerten?",
+        "de": "Wann haben die Schmerzen begonnen?"
+      }
+    },
+    "pain_008": {
+      "version": 1,
+      "text": {
+        "en": "Was the pain at its worst when it started?",
+        "da": "Var smerten stærkest, lige da den begyndte?",
+        "de": "Waren die Schmerzen zu Beginn am stärksten?"
+      }
+    },
+    "pain_009": {
+      "version": 1,
+      "text": {
+        "en": "Is the pain constant?",
+        "da": "Er smerten konstant?",
+        "de": "Sind die Schmerzen ständig vorhanden?"
+      }
+    },
+    "pain_010": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain come in episodes?",
+        "da": "Kommer smerten i anfald?",
+        "de": "Treten die Schmerzen anfallsweise auf?"
+      }
+    },
+    "pain_011": {
+      "version": 1,
+      "text": {
+        "en": "How long does an episode usually last?",
+        "da": "Hvor længe varer et anfald typisk?",
+        "de": "Wie lange dauert ein Schmerzanfall normalerweise?"
+      }
+    },
+    "pain_012": {
+      "version": 1,
+      "text": {
+        "en": "Has the pain become more severe?",
+        "da": "Er smerten blevet stærkere?",
+        "de": "Sind die Schmerzen stärker geworden?"
+      }
+    },
+    "pain_013": {
+      "version": 1,
+      "text": {
+        "en": "Has the pain become less severe?",
+        "da": "Er smerten blevet svagere?",
+        "de": "Sind die Schmerzen schwächer geworden?"
+      }
+    },
+    "pain_014": {
+      "version": 1,
+      "text": {
+        "en": "Does moving make the pain worse?",
+        "da": "Bliver smerten værre, når du bevæger dig?",
+        "de": "Werden die Schmerzen durch Bewegung stärker?"
+      }
+    },
+    "pain_015": {
+      "version": 1,
+      "text": {
+        "en": "Does touching the area make the pain worse?",
+        "da": "Bliver smerten værre ved berøring?",
+        "de": "Werden die Schmerzen stärker, wenn Sie die Stelle berühren?"
+      }
+    },
+    "pain_016": {
+      "version": 1,
+      "text": {
+        "en": "Does taking a deep breath make the pain worse?",
+        "da": "Bliver smerten værre, når du trækker vejret dybt?",
+        "de": "Werden die Schmerzen beim tiefen Einatmen stärker?"
+      }
+    },
+    "pain_017": {
+      "version": 1,
+      "text": {
+        "en": "Does coughing make the pain worse?",
+        "da": "Bliver smerten værre, når du hoster?",
+        "de": "Werden die Schmerzen beim Husten stärker?"
+      }
+    },
+    "pain_018": {
+      "version": 1,
+      "text": {
+        "en": "Does physical exertion make the pain worse?",
+        "da": "Bliver smerten værre ved fysisk anstrengelse?",
+        "de": "Werden die Schmerzen bei körperlicher Anstrengung stärker?"
+      }
+    },
+    "pain_019": {
+      "version": 1,
+      "text": {
+        "en": "Does resting reduce the pain?",
+        "da": "Bliver smerten mindre, når du hviler?",
+        "de": "Lassen die Schmerzen in Ruhe nach?"
+      }
+    },
+    "pain_020": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain change when you change position?",
+        "da": "Ændrer smerten sig, når du skifter stilling?",
+        "de": "Verändern sich die Schmerzen, wenn Sie Ihre Körperposition ändern?"
+      }
+    },
+    "pain_021": {
+      "version": 1,
+      "text": {
+        "en": "Has pain-relieving medicine helped?",
+        "da": "Har smertestillende medicin hjulpet?",
+        "de": "Haben Schmerzmittel geholfen?"
+      }
+    },
+    "pain_022": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain feel like pressure?",
+        "da": "Føles smerten trykkende?",
+        "de": "Fühlen sich die Schmerzen wie Druck an?"
+      }
+    },
+    "pain_023": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain feel sharp or stabbing?",
+        "da": "Føles smerten stikkende?",
+        "de": "Fühlen sich die Schmerzen scharf oder stechend an?"
+      }
+    },
+    "pain_024": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain feel like burning?",
+        "da": "Føles smerten brændende?",
+        "de": "Fühlen sich die Schmerzen brennend an?"
+      }
+    },
+    "pain_025": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain feel like throbbing?",
+        "da": "Føles smerten dunkende?",
+        "de": "Fühlen sich die Schmerzen pochend an?"
+      }
+    },
+    "pain_026": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain feel like cramping?",
+        "da": "Føles smerten krampende?",
+        "de": "Fühlen sich die Schmerzen krampfartig an?"
+      }
+    },
+    "pain_027": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain feel like electric shocks?",
+        "da": "Føles smerten som elektriske stød?",
+        "de": "Fühlen sich die Schmerzen wie Stromschläge an?"
+      }
+    },
+    "pain_028": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain spread to other parts of your body?",
+        "da": "Breder smerten sig til andre steder i kroppen?",
+        "de": "Strahlen die Schmerzen in andere Körperteile aus?"
+      }
+    },
+    "pain_029": {
+      "version": 1,
+      "text": {
+        "en": "Do you usually have pain in this area?",
+        "da": "Har du normalt smerter i dette område?",
+        "de": "Haben Sie normalerweise Schmerzen an dieser Stelle?"
+      }
+    },
+    "pain_030": {
+      "version": 1,
+      "text": {
+        "en": "Is this pain different from your usual pain?",
+        "da": "Er denne smerte anderledes end dine sædvanlige smerter?",
+        "de": "Unterscheiden sich diese Schmerzen von Ihren üblichen Schmerzen?"
+      }
+    },
+    "airway_001": {
+      "version": 1,
+      "text": {
+        "en": "Is something in your throat making it difficult to breathe?",
+        "da": "Har du svært ved at få luft på grund af noget i halsen?",
+        "de": "Erschwert Ihnen etwas im Hals das Atmen?"
+      }
+    },
+    "airway_002": {
+      "version": 1,
+      "text": {
+        "en": "Did something go down the wrong way?",
+        "da": "Har du fået noget galt i halsen?",
+        "de": "Haben Sie sich verschluckt?"
+      }
+    },
+    "airway_003": {
+      "version": 1,
+      "text": {
+        "en": "Does it feel like something is stuck in your throat?",
+        "da": "Føles det, som om noget sidder fast i halsen?",
+        "de": "Fühlt es sich an, als stecke etwas in Ihrem Hals?"
+      }
+    },
+    "airway_004": {
+      "version": 1,
+      "text": {
+        "en": "Do you have difficulty swallowing?",
+        "da": "Har du svært ved at synke?",
+        "de": "Haben Sie Schwierigkeiten beim Schlucken?"
+      }
+    },
+    "airway_005": {
+      "version": 1,
+      "text": {
+        "en": "Do you have difficulty swallowing your own saliva?",
+        "da": "Har du svært ved at synke dit eget spyt?",
+        "de": "Haben Sie Schwierigkeiten, Ihren eigenen Speichel zu schlucken?"
+      }
+    },
+    "airway_006": {
+      "version": 1,
+      "text": {
+        "en": "Is your tongue swollen?",
+        "da": "Er din tunge hævet?",
+        "de": "Ist Ihre Zunge geschwollen?"
+      }
+    },
+    "airway_007": {
+      "version": 1,
+      "text": {
+        "en": "Are your lips swollen?",
+        "da": "Er dine læber hævede?",
+        "de": "Sind Ihre Lippen geschwollen?"
+      }
+    },
+    "airway_008": {
+      "version": 1,
+      "text": {
+        "en": "Does your throat feel swollen inside?",
+        "da": "Føles din hals hævet indvendigt?",
+        "de": "Fühlt sich Ihr Hals innen geschwollen an?"
+      }
+    },
+    "airway_009": {
+      "version": 1,
+      "text": {
+        "en": "Has your voice become hoarse?",
+        "da": "Er din stemme blevet hæs?",
+        "de": "Ist Ihre Stimme heiser geworden?"
+      }
+    },
+    "airway_010": {
+      "version": 1,
+      "text": {
+        "en": "Does it hurt when you swallow?",
+        "da": "Gør det ondt, når du synker?",
+        "de": "Tut es beim Schlucken weh?"
+      }
+    },
+    "airway_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a sore throat?",
+        "da": "Har du ondt i halsen?",
+        "de": "Haben Sie Halsschmerzen?"
+      }
+    },
+    "airway_012": {
+      "version": 1,
+      "text": {
+        "en": "Did the problems begin while you were eating?",
+        "da": "Begyndte problemerne, mens du spiste?",
+        "de": "Haben die Beschwerden beim Essen begonnen?"
+      }
+    },
+    "airway_013": {
+      "version": 1,
+      "text": {
+        "en": "Did the problems begin after taking medicine?",
+        "da": "Begyndte problemerne efter indtagelse af medicin?",
+        "de": "Haben die Beschwerden nach der Einnahme eines Medikaments begonnen?"
+      }
+    },
+    "airway_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you had similar swelling before?",
+        "da": "Har du tidligere haft lignende hævelser?",
+        "de": "Hatten Sie schon einmal eine ähnliche Schwellung?"
+      }
+    },
+    "head_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a headache?",
+        "da": "Har du hovedpine?",
+        "de": "Haben Sie Kopfschmerzen?"
+      }
+    },
+    "head_002": {
+      "version": 1,
+      "text": {
+        "en": "Did the headache start suddenly?",
+        "da": "Begyndte hovedpinen pludseligt?",
+        "de": "Haben die Kopfschmerzen plötzlich begonnen?"
+      }
+    },
+    "head_003": {
+      "version": 1,
+      "text": {
+        "en": "Is this the worst headache you have ever had?",
+        "da": "Er dette den værste hovedpine, du nogensinde har haft?",
+        "de": "Sind dies die stärksten Kopfschmerzen, die Sie je hatten?"
+      }
+    },
+    "head_004": {
+      "version": 1,
+      "text": {
+        "en": "Is this headache different from headaches you have had before?",
+        "da": "Er hovedpinen anderledes end tidligere hovedpine?",
+        "de": "Unterscheiden sich diese Kopfschmerzen von früheren Kopfschmerzen?"
+      }
+    },
+    "head_005": {
+      "version": 1,
+      "text": {
+        "en": "Does light bother you?",
+        "da": "Er du generet af lys?",
+        "de": "Stört Sie Licht?"
+      }
+    },
+    "head_006": {
+      "version": 1,
+      "text": {
+        "en": "Does sound bother you?",
+        "da": "Er du generet af lyde?",
+        "de": "Stören Sie Geräusche?"
+      }
+    },
+    "head_007": {
+      "version": 1,
+      "text": {
+        "en": "Do you have facial pain?",
+        "da": "Har du ondt i ansigtet?",
+        "de": "Haben Sie Schmerzen im Gesicht?"
+      }
+    },
+    "head_008": {
+      "version": 1,
+      "text": {
+        "en": "Do you have toothache?",
+        "da": "Har du tandpine?",
+        "de": "Haben Sie Zahnschmerzen?"
+      }
+    },
+    "head_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you have ear pain?",
+        "da": "Har du ondt i øret?",
+        "de": "Haben Sie Ohrenschmerzen?"
+      }
+    },
+    "head_010": {
+      "version": 1,
+      "text": {
+        "en": "Is fluid coming from your ear?",
+        "da": "Har du væske fra øret?",
+        "de": "Tritt Flüssigkeit aus Ihrem Ohr aus?"
+      }
+    },
+    "head_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you suddenly lost your hearing?",
+        "da": "Har du pludseligt mistet hørelsen?",
+        "de": "Haben Sie plötzlich Ihr Hörvermögen verloren?"
+      }
+    },
+    "head_012": {
+      "version": 1,
+      "text": {
+        "en": "Do you have ringing in your ears?",
+        "da": "Har du ringen for ørerne?",
+        "de": "Haben Sie Ohrensausen?"
+      }
+    },
+    "head_013": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a nosebleed?",
+        "da": "Har du næseblod?",
+        "de": "Haben Sie Nasenbluten?"
+      }
+    },
+    "head_014": {
+      "version": 1,
+      "text": {
+        "en": "Do you have eye pain?",
+        "da": "Har du smerter i øjet?",
+        "de": "Haben Sie Augenschmerzen?"
+      }
+    },
+    "head_015": {
+      "version": 1,
+      "text": {
+        "en": "Is your vision blurred?",
+        "da": "Ser du sløret?",
+        "de": "Sehen Sie verschwommen?"
+      }
+    },
+    "head_016": {
+      "version": 1,
+      "text": {
+        "en": "Are you seeing double?",
+        "da": "Ser du dobbelt?",
+        "de": "Sehen Sie doppelt?"
+      }
+    },
+    "head_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you suddenly lost part of your vision?",
+        "da": "Har du pludseligt mistet noget af dit syn?",
+        "de": "Haben Sie plötzlich einen Teil Ihres Sehvermögens verloren?"
+      }
+    },
+    "head_018": {
+      "version": 1,
+      "text": {
+        "en": "Has something entered your eye?",
+        "da": "Har du fået noget i øjet?",
+        "de": "Ist etwas in Ihr Auge geraten?"
+      }
+    },
+    "head_019": {
+      "version": 1,
+      "text": {
+        "en": "Does your neck feel stiff?",
+        "da": "Har du stivhed i nakken?",
+        "de": "Fühlt sich Ihr Nacken steif an?"
+      }
+    },
+    "thorax_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you have chest pain?",
+        "da": "Har du smerter i brystet?",
+        "de": "Haben Sie Schmerzen im Brustkorb?"
+      }
+    },
+    "thorax_002": {
+      "version": 1,
+      "text": {
+        "en": "Is the pain in the centre of your chest?",
+        "da": "Er smerten midt i brystet?",
+        "de": "Sind die Schmerzen in der Mitte Ihres Brustkorbs?"
+      }
+    },
+    "thorax_003": {
+      "version": 1,
+      "text": {
+        "en": "Is the pain on the right side of your chest?",
+        "da": "Sidder smerten i højre side af brystet?",
+        "de": "Sind die Schmerzen auf der rechten Seite Ihres Brustkorbs?"
+      }
+    },
+    "thorax_004": {
+      "version": 1,
+      "text": {
+        "en": "Is the pain on the left side of your chest?",
+        "da": "Sidder smerten i venstre side af brystet?",
+        "de": "Sind die Schmerzen auf der linken Seite Ihres Brustkorbs?"
+      }
+    },
+    "thorax_005": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain spread to an arm?",
+        "da": "Breder smerten sig til en arm?",
+        "de": "Strahlen die Schmerzen in einen Arm aus?"
+      }
+    },
+    "thorax_006": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain spread to your jaw?",
+        "da": "Breder smerten sig til kæben?",
+        "de": "Strahlen die Schmerzen in Ihren Kiefer aus?"
+      }
+    },
+    "thorax_007": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain spread to your back?",
+        "da": "Breder smerten sig til ryggen?",
+        "de": "Strahlen die Schmerzen in Ihren Rücken aus?"
+      }
+    },
+    "thorax_008": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain spread to your neck?",
+        "da": "Breder smerten sig til halsen?",
+        "de": "Strahlen die Schmerzen in Ihren Hals aus?"
+      }
+    },
+    "thorax_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you received a blow to your chest?",
+        "da": "Har du fået et slag mod brystkassen?",
+        "de": "Haben Sie einen Schlag gegen den Brustkorb bekommen?"
+      }
+    },
+    "thorax_010": {
+      "version": 1,
+      "text": {
+        "en": "Does it hurt when you press on your chest?",
+        "da": "Gør det ondt, når du trykker på brystkassen?",
+        "de": "Tut es weh, wenn Sie auf Ihren Brustkorb drücken?"
+      }
+    },
+    "thorax_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently had chest surgery?",
+        "da": "Har du haft en operation i brystkassen for nylig?",
+        "de": "Wurden Sie vor Kurzem am Brustkorb operiert?"
+      }
+    },
+    "heart_001": {
+      "version": 1,
+      "text": {
+        "en": "Does it feel like your heart is beating very fast?",
+        "da": "Føles det, som om dit hjerte slår meget hurtigt?",
+        "de": "Fühlt es sich an, als schlage Ihr Herz sehr schnell?"
+      }
+    },
+    "heart_002": {
+      "version": 1,
+      "text": {
+        "en": "Does it feel like your heart is beating irregularly?",
+        "da": "Føles det, som om dit hjerte slår uregelmæssigt?",
+        "de": "Fühlt es sich an, als schlage Ihr Herz unregelmäßig?"
+      }
+    },
+    "heart_003": {
+      "version": 1,
+      "text": {
+        "en": "Does it feel like your heart is skipping beats?",
+        "da": "Føles det, som om dit hjerte springer slag over?",
+        "de": "Fühlt es sich an, als setze Ihr Herzschlag aus?"
+      }
+    },
+    "heart_004": {
+      "version": 1,
+      "text": {
+        "en": "Does it feel like your heart is beating very slowly?",
+        "da": "Føles det, som om dit hjerte slår meget langsomt?",
+        "de": "Fühlt es sich an, als schlage Ihr Herz sehr langsam?"
+      }
+    },
+    "heart_005": {
+      "version": 1,
+      "text": {
+        "en": "Have you had palpitations before?",
+        "da": "Har du haft hjertebanken før?",
+        "de": "Hatten Sie schon einmal Herzklopfen?"
+      }
+    },
+    "heart_006": {
+      "version": 1,
+      "text": {
+        "en": "Have you had a cold sweat?",
+        "da": "Har du haft koldsved?",
+        "de": "Hatten Sie kalten Schweiß?"
+      }
+    },
+    "heart_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you felt as though you were about to faint?",
+        "da": "Har du følt, at du var ved at besvime?",
+        "de": "Hatten Sie das Gefühl, gleich ohnmächtig zu werden?"
+      }
+    },
+    "heart_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you lost consciousness?",
+        "da": "Har du mistet bevidstheden?",
+        "de": "Haben Sie das Bewusstsein verloren?"
+      }
+    },
+    "heart_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a heart attack?",
+        "da": "Har du tidligere haft en blodprop i hjertet?",
+        "de": "Hatten Sie schon einmal einen Herzinfarkt?"
+      }
+    },
+    "heart_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with heart failure?",
+        "da": "Har du kendt hjertesvigt?",
+        "de": "Wurde bei Ihnen eine Herzschwäche festgestellt?"
+      }
+    },
+    "heart_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with a heart rhythm disorder?",
+        "da": "Har du en kendt hjerterytmeforstyrrelse?",
+        "de": "Wurde bei Ihnen eine Herzrhythmusstörung festgestellt?"
+      }
+    },
+    "heart_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with high blood pressure?",
+        "da": "Har du kendt forhøjet blodtryk?",
+        "de": "Wurde bei Ihnen Bluthochdruck festgestellt?"
+      }
+    },
+    "heart_013": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a pacemaker?",
+        "da": "Har du en pacemaker?",
+        "de": "Haben Sie einen Herzschrittmacher?"
+      }
+    },
+    "heart_014": {
+      "version": 1,
+      "text": {
+        "en": "Do you have an implanted defibrillator?",
+        "da": "Har du en indopereret hjertestarter?",
+        "de": "Haben Sie einen implantierten Defibrillator?"
+      }
+    },
+    "heart_015": {
+      "version": 1,
+      "text": {
+        "en": "Has your implanted defibrillator delivered a shock?",
+        "da": "Har din indopererede hjertestarter givet dig et stød?",
+        "de": "Hat Ihr implantierter Defibrillator einen Schock abgegeben?"
+      }
+    },
+    "heart_016": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a procedure to widen a blood vessel in your heart?",
+        "da": "Har du tidligere fået udvidet et blodkar i hjertet?",
+        "de": "Wurde bei Ihnen schon einmal ein Blutgefäß am Herzen durch einen Eingriff erweitert?"
+      }
+    },
+    "heart_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had heart bypass surgery?",
+        "da": "Har du tidligere fået foretaget en bypassoperation i hjertet?",
+        "de": "Hatten Sie schon einmal eine Bypassoperation am Herzen?"
+      }
+    },
+    "heart_018": {
+      "version": 1,
+      "text": {
+        "en": "Have your legs become more swollen than usual?",
+        "da": "Er dine ben blevet mere hævede end normalt?",
+        "de": "Sind Ihre Beine stärker geschwollen als sonst?"
+      }
+    },
+    "heart_019": {
+      "version": 1,
+      "text": {
+        "en": "Is one leg more swollen than the other?",
+        "da": "Er det ene ben hævet mere end det andet?",
+        "de": "Ist ein Bein stärker geschwollen als das andere?"
+      }
+    },
+    "lungs_001": {
+      "version": 1,
+      "text": {
+        "en": "Are you having difficulty breathing right now?",
+        "da": "Har du svært ved at trække vejret lige nu?",
+        "de": "Haben Sie gerade Atemnot?"
+      }
+    },
+    "lungs_002": {
+      "version": 1,
+      "text": {
+        "en": "Did the shortness of breath start suddenly?",
+        "da": "Begyndte åndenøden pludseligt?",
+        "de": "Hat die Atemnot plötzlich begonnen?"
+      }
+    },
+    "lungs_003": {
+      "version": 2,
+      "text": {
+        "en": "When did the shortness of breath start?",
+        "da": "Hvornår begyndte åndenøden?",
+        "de": "Wann hat die Atemnot begonnen?"
+      }
+    },
+    "lungs_004": {
+      "version": 1,
+      "text": {
+        "en": "Are you short of breath even when resting?",
+        "da": "Har du åndenød, selv når du hviler?",
+        "de": "Haben Sie auch in Ruhe Atemnot?"
+      }
+    },
+    "lungs_005": {
+      "version": 1,
+      "text": {
+        "en": "Do you become more short of breath with physical activity?",
+        "da": "Bliver du mere forpustet ved fysisk aktivitet?",
+        "de": "Bekommen Sie bei körperlicher Aktivität mehr Atemnot?"
+      }
+    },
+    "lungs_006": {
+      "version": 1,
+      "text": {
+        "en": "Does your breathing get worse when you lie flat?",
+        "da": "Bliver din vejrtrækning værre, når du ligger fladt?",
+        "de": "Wird Ihre Atmung schlechter, wenn Sie flach liegen?"
+      }
+    },
+    "lungs_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you woken at night because you could not get enough air?",
+        "da": "Er du vågnet om natten, fordi du ikke kunne få luft?",
+        "de": "Sind Sie nachts aufgewacht, weil Sie nicht genug Luft bekamen?"
+      }
+    },
+    "lungs_008": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a cough?",
+        "da": "Har du hoste?",
+        "de": "Haben Sie Husten?"
+      }
+    },
+    "lungs_009": {
+      "version": 1,
+      "text": {
+        "en": "Are you coughing up mucus?",
+        "da": "Hoster du slim op?",
+        "de": "Husten Sie Schleim ab?"
+      }
+    },
+    "lungs_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you coughed up blood?",
+        "da": "Har du hostet blod op?",
+        "de": "Haben Sie Blut gehustet?"
+      }
+    },
+    "lungs_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you notice a whistling sound when you breathe?",
+        "da": "Har du en pibende lyd, når du trækker vejret?",
+        "de": "Bemerken Sie ein pfeifendes Geräusch beim Atmen?"
+      }
+    },
+    "lungs_012": {
+      "version": 1,
+      "text": {
+        "en": "Are you more short of breath than usual?",
+        "da": "Er du mere forpustet end normalt?",
+        "de": "Haben Sie mehr Atemnot als sonst?"
+      }
+    },
+    "lungs_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with asthma?",
+        "da": "Har du kendt astma?",
+        "de": "Wurde bei Ihnen Asthma festgestellt?"
+      }
+    },
+    "lungs_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with chronic obstructive pulmonary disease (COPD)?",
+        "da": "Har du kendt KOL?",
+        "de": "Wurde bei Ihnen eine chronisch obstruktive Lungenerkrankung (COPD) festgestellt?"
+      }
+    },
+    "lungs_015": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a blood clot in your lungs?",
+        "da": "Har du tidligere haft en blodprop i lungerne?",
+        "de": "Hatten Sie schon einmal ein Blutgerinnsel in der Lunge?"
+      }
+    },
+    "lungs_016": {
+      "version": 1,
+      "text": {
+        "en": "Do you use oxygen at home?",
+        "da": "Bruger du ilt derhjemme?",
+        "de": "Benutzen Sie zu Hause Sauerstoff?"
+      }
+    },
+    "lungs_017": {
+      "version": 1,
+      "text": {
+        "en": "Do you use inhaled medicine?",
+        "da": "Bruger du inhalationsmedicin?",
+        "de": "Benutzen Sie Medikamente zum Inhalieren?"
+      }
+    },
+    "lungs_018": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken your inhaled medicine today?",
+        "da": "Har du taget din inhalationsmedicin i dag?",
+        "de": "Haben Sie heute Ihre Medikamente zum Inhalieren angewendet?"
+      }
+    },
+    "lungs_019": {
+      "version": 1,
+      "text": {
+        "en": "Did the inhaled medicine help?",
+        "da": "Hjalp inhalationsmedicinen?",
+        "de": "Hat das Medikament zum Inhalieren geholfen?"
+      }
+    },
+    "lungs_020": {
+      "version": 1,
+      "text": {
+        "en": "Have you been exposed to smoke?",
+        "da": "Har du været udsat for røg?",
+        "de": "Waren Sie Rauch ausgesetzt?"
+      }
+    },
+    "lungs_021_gas": {
+      "version": 1,
+      "text": {
+        "en": "Have you been exposed to gas?",
+        "da": "Har du været udsat for gas?",
+        "de": "Waren Sie Gas ausgesetzt?"
+      }
+    },
+    "lungs_021_fumes": {
+      "version": 1,
+      "text": {
+        "en": "Have you been exposed to chemical fumes?",
+        "da": "Har du været udsat for kemiske dampe?",
+        "de": "Waren Sie chemischen Dämpfen ausgesetzt?"
+      }
+    },
+    "neuro_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel dizzy?",
+        "da": "Føler du dig svimmel?",
+        "de": "Ist Ihnen schwindelig?"
+      }
+    },
+    "neuro_002": {
+      "version": 1,
+      "text": {
+        "en": "Does it feel as though your surroundings are spinning?",
+        "da": "Føles det, som om omgivelserne drejer rundt?",
+        "de": "Fühlt es sich an, als drehe sich Ihre Umgebung?"
+      }
+    },
+    "neuro_003": {
+      "version": 1,
+      "text": {
+        "en": "Are you having difficulty keeping your balance?",
+        "da": "Har du problemer med at holde balancen?",
+        "de": "Haben Sie Schwierigkeiten, das Gleichgewicht zu halten?"
+      }
+    },
+    "neuro_004": {
+      "version": 1,
+      "text": {
+        "en": "Have you suddenly developed difficulty walking?",
+        "da": "Har du pludseligt fået svært ved at gå?",
+        "de": "Haben Sie plötzlich Schwierigkeiten beim Gehen bekommen?"
+      }
+    },
+    "neuro_005": {
+      "version": 1,
+      "text": {
+        "en": "Does one side of your face feel different from usual?",
+        "da": "Føles den ene side af dit ansigt anderledes end normalt?",
+        "de": "Fühlt sich eine Gesichtshälfte anders an als sonst?"
+      }
+    },
+    "neuro_006": {
+      "version": 1,
+      "text": {
+        "en": "Are you having difficulty moving one arm?",
+        "da": "Har du svært ved at bevæge den ene arm?",
+        "de": "Haben Sie Schwierigkeiten, einen Arm zu bewegen?"
+      }
+    },
+    "neuro_007": {
+      "version": 1,
+      "text": {
+        "en": "Are you having difficulty moving one leg?",
+        "da": "Har du svært ved at bevæge det ene ben?",
+        "de": "Haben Sie Schwierigkeiten, ein Bein zu bewegen?"
+      }
+    },
+    "neuro_008": {
+      "version": 1,
+      "text": {
+        "en": "Does one arm feel weaker than usual?",
+        "da": "Føles den ene arm svagere end normalt?",
+        "de": "Fühlt sich ein Arm schwächer an als sonst?"
+      }
+    },
+    "neuro_009": {
+      "version": 1,
+      "text": {
+        "en": "Does one leg feel weaker than usual?",
+        "da": "Føles det ene ben svagere end normalt?",
+        "de": "Fühlt sich ein Bein schwächer an als sonst?"
+      }
+    },
+    "neuro_010": {
+      "version": 1,
+      "text": {
+        "en": "Do you have new numbness in your body?",
+        "da": "Har du ny følelsesløshed i kroppen?",
+        "de": "Haben Sie neu aufgetretene Taubheitsgefühle am Körper?"
+      }
+    },
+    "neuro_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you have new tingling in your body?",
+        "da": "Har du ny prikken i kroppen?",
+        "de": "Haben Sie neu aufgetretenes Kribbeln am Körper?"
+      }
+    },
+    "neuro_012": {
+      "version": 1,
+      "text": {
+        "en": "Point to where your sense of touch has changed.",
+        "da": "Peg på, hvor din følesans har ændret sig.",
+        "de": "Zeigen Sie, wo sich Ihr Berührungsempfinden verändert hat."
+      }
+    },
+    "neuro_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you suddenly developed difficulty finding words?",
+        "da": "Har du pludseligt fået svært ved at finde ord?",
+        "de": "Haben Sie plötzlich Schwierigkeiten bekommen, Wörter zu finden?"
+      }
+    },
+    "neuro_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you suddenly developed difficulty understanding what other people say?",
+        "da": "Har du pludseligt fået svært ved at forstå, hvad andre siger?",
+        "de": "Haben Sie plötzlich Schwierigkeiten bekommen, andere Menschen zu verstehen?"
+      }
+    },
+    "neuro_015": {
+      "version": 1,
+      "text": {
+        "en": "Has it become harder to speak clearly?",
+        "da": "Er det blevet sværere at tale tydeligt?",
+        "de": "Ist es schwieriger geworden, deutlich zu sprechen?"
+      }
+    },
+    "neuro_016": {
+      "version": 2,
+      "text": {
+        "en": "When did the neurological symptoms start?",
+        "da": "Hvornår begyndte de neurologiske symptomer?",
+        "de": "Wann haben die neurologischen Beschwerden begonnen?"
+      }
+    },
+    "neuro_017": {
+      "version": 1,
+      "text": {
+        "en": "When were you last your usual self?",
+        "da": "Hvornår var du sidst som normalt?",
+        "de": "Wann waren Sie zuletzt in Ihrem gewohnten Zustand?"
+      }
+    },
+    "neuro_018": {
+      "version": 1,
+      "text": {
+        "en": "Were the symptoms present when you woke up?",
+        "da": "Var symptomerne til stede, da du vågnede?",
+        "de": "Waren die Beschwerden beim Aufwachen schon vorhanden?"
+      }
+    },
+    "neuro_019": {
+      "version": 1,
+      "text": {
+        "en": "Have the symptoms gone away again?",
+        "da": "Er symptomerne forsvundet igen?",
+        "de": "Sind die Beschwerden wieder verschwunden?"
+      }
+    },
+    "neuro_020": {
+      "version": 1,
+      "text": {
+        "en": "Have you had a seizure today?",
+        "da": "Har du haft et krampeanfald i dag?",
+        "de": "Hatten Sie heute einen Krampfanfall?"
+      }
+    },
+    "neuro_021": {
+      "version": 1,
+      "text": {
+        "en": "Do you have gaps in your memory around the event?",
+        "da": "Har du hukommelseshuller omkring hændelsen?",
+        "de": "Haben Sie Erinnerungslücken im Zusammenhang mit dem Ereignis?"
+      }
+    },
+    "neuro_022": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel more confused than usual?",
+        "da": "Føler du dig mere forvirret end normalt?",
+        "de": "Fühlen Sie sich verwirrter als sonst?"
+      }
+    },
+    "neuro_023": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel more sleepy than usual?",
+        "da": "Føler du dig mere søvnig end normalt?",
+        "de": "Fühlen Sie sich schläfriger als sonst?"
+      }
+    },
+    "neuro_024": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with epilepsy?",
+        "da": "Har du kendt epilepsi?",
+        "de": "Wurde bei Ihnen Epilepsie festgestellt?"
+      }
+    },
+    "neuro_025": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a stroke?",
+        "da": "Har du tidligere haft et slagtilfælde?",
+        "de": "Hatten Sie schon einmal einen Schlaganfall?"
+      }
+    },
+    "neuro_026": {
+      "version": 1,
+      "text": {
+        "en": "Do you normally have difficulty moving part of your body?",
+        "da": "Har du normalt problemer med at bevæge en del af kroppen?",
+        "de": "Haben Sie normalerweise Schwierigkeiten, einen Teil Ihres Körpers zu bewegen?"
+      }
+    },
+    "neuro_027": {
+      "version": 1,
+      "text": {
+        "en": "Do you normally have difficulty speaking?",
+        "da": "Har du normalt problemer med at tale?",
+        "de": "Haben Sie normalerweise Schwierigkeiten beim Sprechen?"
+      }
+    },
+    "neuro_028": {
+      "version": 1,
+      "text": {
+        "en": "Do you normally have memory problems?",
+        "da": "Har du normalt problemer med hukommelsen?",
+        "de": "Haben Sie normalerweise Gedächtnisprobleme?"
+      }
+    },
+    "abdomen_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you have abdominal pain?",
+        "da": "Har du ondt i maven?",
+        "de": "Haben Sie Bauchschmerzen?"
+      }
+    },
+    "abdomen_002": {
+      "version": 1,
+      "text": {
+        "en": "Has the pain moved from where it started?",
+        "da": "Har smerten flyttet sig fra det sted, hvor den begyndte?",
+        "de": "Sind die Schmerzen von der Stelle, an der sie begonnen haben, an eine andere Stelle gewandert?"
+      }
+    },
+    "abdomen_003": {
+      "version": 1,
+      "text": {
+        "en": "Does eating make the abdominal pain worse?",
+        "da": "Bliver mavesmerten værre, når du spiser?",
+        "de": "Werden die Bauchschmerzen durch Essen stärker?"
+      }
+    },
+    "abdomen_004": {
+      "version": 1,
+      "text": {
+        "en": "Does having a bowel movement reduce the abdominal pain?",
+        "da": "Bliver mavesmerten mindre efter afføring?",
+        "de": "Lassen die Bauchschmerzen nach dem Stuhlgang nach?"
+      }
+    },
+    "abdomen_005": {
+      "version": 1,
+      "text": {
+        "en": "Does your abdomen feel bloated?",
+        "da": "Føles din mave oppustet?",
+        "de": "Fühlt sich Ihr Bauch aufgebläht an?"
+      }
+    },
+    "abdomen_006": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel nauseated?",
+        "da": "Har du kvalme?",
+        "de": "Ist Ihnen übel?"
+      }
+    },
+    "abdomen_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you vomited?",
+        "da": "Har du kastet op?",
+        "de": "Haben Sie erbrochen?"
+      }
+    },
+    "abdomen_008": {
+      "version": 1,
+      "text": {
+        "en": "How many times have you vomited today?",
+        "da": "Hvor mange gange har du kastet op i dag?",
+        "de": "Wie oft haben Sie heute erbrochen?"
+      }
+    },
+    "abdomen_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you vomited blood?",
+        "da": "Har du kastet blod op?",
+        "de": "Haben Sie Blut erbrochen?"
+      }
+    },
+    "abdomen_010": {
+      "version": 1,
+      "text": {
+        "en": "Has your vomit looked like coffee grounds?",
+        "da": "Har dit opkast lignet kaffegrums?",
+        "de": "Sah Ihr Erbrochenes wie Kaffeesatz aus?"
+      }
+    },
+    "abdomen_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you had diarrhoea?",
+        "da": "Har du diarré?",
+        "de": "Hatten Sie Durchfall?"
+      }
+    },
+    "abdomen_012": {
+      "version": 1,
+      "text": {
+        "en": "How many times have you had diarrhoea today?",
+        "da": "Hvor mange gange har du haft diarré i dag?",
+        "de": "Wie oft hatten Sie heute Durchfall?"
+      }
+    },
+    "abdomen_013": {
+      "version": 1,
+      "text": {
+        "en": "Are you constipated?",
+        "da": "Har du forstoppelse?",
+        "de": "Haben Sie Verstopfung?"
+      }
+    },
+    "abdomen_014": {
+      "version": 1,
+      "text": {
+        "en": "When did you last have a bowel movement?",
+        "da": "Hvornår havde du sidst afføring?",
+        "de": "Wann hatten Sie zuletzt Stuhlgang?"
+      }
+    },
+    "abdomen_015": {
+      "version": 1,
+      "text": {
+        "en": "Have you seen blood in your stool?",
+        "da": "Har du set blod i din afføring?",
+        "de": "Haben Sie Blut im Stuhl gesehen?"
+      }
+    },
+    "abdomen_016": {
+      "version": 1,
+      "text": {
+        "en": "Has your stool been black and tar-like?",
+        "da": "Har din afføring været sort og tjæreagtig?",
+        "de": "War Ihr Stuhl schwarz und teerartig?"
+      }
+    },
+    "abdomen_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you been able to pass gas today?",
+        "da": "Har du kunnet komme af med luft fra tarmen i dag?",
+        "de": "Konnten Sie heute Darmgase ablassen?"
+      }
+    },
+    "abdomen_018": {
+      "version": 1,
+      "text": {
+        "en": "Have you been able to keep fluids down?",
+        "da": "Har du kunnet holde væske nede?",
+        "de": "Konnten Sie Flüssigkeit bei sich behalten?"
+      }
+    },
+    "abdomen_019": {
+      "version": 1,
+      "text": {
+        "en": "Have you had heartburn?",
+        "da": "Har du haft halsbrand?",
+        "de": "Hatten Sie Sodbrennen?"
+      }
+    },
+    "abdomen_020": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a stomach ulcer?",
+        "da": "Har du tidligere haft mavesår?",
+        "de": "Hatten Sie schon einmal ein Magengeschwür?"
+      }
+    },
+    "abdomen_021": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had gallstones?",
+        "da": "Har du tidligere haft galdesten?",
+        "de": "Hatten Sie schon einmal Gallensteine?"
+      }
+    },
+    "abdomen_022": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had abdominal surgery?",
+        "da": "Har du tidligere fået foretaget en operation i maven?",
+        "de": "Wurden Sie schon einmal am Bauch operiert?"
+      }
+    },
+    "abdomen_023": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a known hernia?",
+        "da": "Har du et kendt brok?",
+        "de": "Ist bei Ihnen ein Eingeweidebruch bekannt?"
+      }
+    },
+    "abdomen_024": {
+      "version": 1,
+      "text": {
+        "en": "Have others who ate with you developed similar symptoms?",
+        "da": "Har andre, du har spist sammen med, fået lignende symptomer?",
+        "de": "Haben andere Personen, die mit Ihnen gegessen haben, ähnliche Beschwerden bekommen?"
+      }
+    },
+    "urinary_001": {
+      "version": 1,
+      "text": {
+        "en": "Does it hurt when you urinate?",
+        "da": "Gør det ondt, når du tisser?",
+        "de": "Tut es beim Wasserlassen weh?"
+      }
+    },
+    "urinary_002": {
+      "version": 1,
+      "text": {
+        "en": "Do you need to urinate more often than usual?",
+        "da": "Skal du tisse oftere end normalt?",
+        "de": "Müssen Sie häufiger Wasser lassen als sonst?"
+      }
+    },
+    "urinary_003": {
+      "version": 1,
+      "text": {
+        "en": "Have you seen blood in your urine?",
+        "da": "Har du blod i urinen?",
+        "de": "Haben Sie Blut im Urin gesehen?"
+      }
+    },
+    "urinary_004": {
+      "version": 1,
+      "text": {
+        "en": "Are you urinating less than usual?",
+        "da": "Tisser du mindre end normalt?",
+        "de": "Lassen Sie weniger Wasser als sonst?"
+      }
+    },
+    "urinary_005": {
+      "version": 1,
+      "text": {
+        "en": "Are you having difficulty passing urine?",
+        "da": "Har du svært ved at komme af med urinen?",
+        "de": "Haben Sie Schwierigkeiten, Wasser zu lassen?"
+      }
+    },
+    "urinary_006": {
+      "version": 1,
+      "text": {
+        "en": "When did you last urinate?",
+        "da": "Hvornår tissede du sidst?",
+        "de": "Wann haben Sie zuletzt Wasser gelassen?"
+      }
+    },
+    "urinary_007": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in the side of your back below the ribs?",
+        "da": "Har du smerter i siden af ryggen under ribbenene?",
+        "de": "Haben Sie seitlich am Rücken unterhalb der Rippen Schmerzen?"
+      }
+    },
+    "urinary_008": {
+      "version": 1,
+      "text": {
+        "en": "Does the pain spread towards your groin?",
+        "da": "Breder smerten sig ned mod lysken?",
+        "de": "Strahlen die Schmerzen in Richtung Ihrer Leiste aus?"
+      }
+    },
+    "urinary_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had kidney stones?",
+        "da": "Har du tidligere haft nyresten?",
+        "de": "Hatten Sie schon einmal Nierensteine?"
+      }
+    },
+    "urinary_010": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a urinary catheter?",
+        "da": "Har du et urinkateter?",
+        "de": "Haben Sie einen Blasenkatheter?"
+      }
+    },
+    "urinary_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in your genitals?",
+        "da": "Har du smerter i kønsorganerne?",
+        "de": "Haben Sie Schmerzen an Ihren Geschlechtsorganen?"
+      }
+    },
+    "urinary_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you suddenly developed pain in a testicle?",
+        "da": "Har du pludseligt fået smerter i en testikel?",
+        "de": "Haben Sie plötzlich Schmerzen in einem Hoden bekommen?"
+      }
+    },
+    "urinary_013": {
+      "version": 1,
+      "text": {
+        "en": "Do you have swelling of the scrotum?",
+        "da": "Har du hævelse i pungen?",
+        "de": "Ist Ihr Hodensack geschwollen?"
+      }
+    },
+    "urinary_014": {
+      "version": 1,
+      "text": {
+        "en": "Do you have unusual discharge from your genitals?",
+        "da": "Har du usædvanligt udflåd fra kønsorganerne?",
+        "de": "Haben Sie ungewöhnlichen Ausfluss aus Ihren Geschlechtsorganen?"
+      }
+    },
+    "urinary_015": {
+      "version": 1,
+      "text": {
+        "en": "Are you bleeding from your vagina?",
+        "da": "Har du blødning fra skeden?",
+        "de": "Bluten Sie aus der Scheide?"
+      }
+    },
+    "urinary_016": {
+      "version": 1,
+      "text": {
+        "en": "Is the vaginal bleeding heavier than your usual period?",
+        "da": "Er blødningen fra skeden kraftigere end din sædvanlige menstruation?",
+        "de": "Ist die Blutung aus der Scheide stärker als Ihre übliche Monatsblutung?"
+      }
+    },
+    "pregnancy_001": {
+      "version": 1,
+      "text": {
+        "en": "Are you pregnant?",
+        "da": "Er du gravid?",
+        "de": "Sind Sie schwanger?"
+      }
+    },
+    "pregnancy_002": {
+      "version": 1,
+      "text": {
+        "en": "Is there a possibility that you are pregnant?",
+        "da": "Er der mulighed for, at du er gravid?",
+        "de": "Könnten Sie schwanger sein?"
+      }
+    },
+    "pregnancy_003": {
+      "version": 1,
+      "text": {
+        "en": "How many completed weeks pregnant are you?",
+        "da": "Hvor mange hele uger er du henne i graviditeten?",
+        "de": "Wie viele abgeschlossene Schwangerschaftswochen haben Sie erreicht?"
+      }
+    },
+    "pregnancy_004": {
+      "version": 1,
+      "text": {
+        "en": "When did your last menstrual period start?",
+        "da": "Hvornår begyndte din seneste menstruation?",
+        "de": "Wann hat Ihre letzte Monatsblutung begonnen?"
+      }
+    },
+    "pregnancy_005": {
+      "version": 1,
+      "text": {
+        "en": "When is your expected due date?",
+        "da": "Hvornår forventer du at føde?",
+        "de": "Wann ist Ihr errechneter Geburtstermin?"
+      }
+    },
+    "pregnancy_006": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in your lower abdomen?",
+        "da": "Har du smerter nederst i maven?",
+        "de": "Haben Sie Schmerzen im Unterbauch?"
+      }
+    },
+    "pregnancy_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you had bleeding during this pregnancy?",
+        "da": "Har du haft blødning i denne graviditet?",
+        "de": "Hatten Sie während dieser Schwangerschaft Blutungen?"
+      }
+    },
+    "pregnancy_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you developed a sudden severe headache during pregnancy?",
+        "da": "Har du fået pludselig kraftig hovedpine under graviditeten?",
+        "de": "Haben Sie während der Schwangerschaft plötzlich starke Kopfschmerzen bekommen?"
+      }
+    },
+    "pregnancy_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you have upper abdominal pain during pregnancy?",
+        "da": "Har du smerter øverst i maven under graviditeten?",
+        "de": "Haben Sie während der Schwangerschaft Schmerzen im Oberbauch?"
+      }
+    },
+    "pregnancy_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you noticed the baby moving less than usual?",
+        "da": "Har du bemærket, at barnet bevæger sig mindre end normalt?",
+        "de": "Haben Sie bemerkt, dass sich das Baby weniger bewegt als sonst?"
+      }
+    },
+    "pregnancy_011": {
+      "version": 1,
+      "text": {
+        "en": "Are you having contractions?",
+        "da": "Har du veer?",
+        "de": "Haben Sie Wehen?"
+      }
+    },
+    "pregnancy_012": {
+      "version": 1,
+      "text": {
+        "en": "How many minutes pass from the start of one contraction to the start of the next?",
+        "da": "Hvor mange minutter er der fra starten af en ve til starten af den næste?",
+        "de": "Wie viele Minuten vergehen vom Beginn einer Wehe bis zum Beginn der nächsten?"
+      }
+    },
+    "pregnancy_013": {
+      "version": 1,
+      "text": {
+        "en": "How many seconds does a contraction usually last?",
+        "da": "Hvor mange sekunder varer en ve typisk?",
+        "de": "Wie viele Sekunden dauert eine Wehe normalerweise?"
+      }
+    },
+    "pregnancy_014": {
+      "version": 1,
+      "text": {
+        "en": "Have your waters broken?",
+        "da": "Er fostervandet gået?",
+        "de": "Ist Ihre Fruchtblase geplatzt?"
+      }
+    },
+    "pregnancy_015": {
+      "version": 1,
+      "text": {
+        "en": "When did your waters break?",
+        "da": "Hvornår gik fostervandet?",
+        "de": "Wann ist Ihre Fruchtblase geplatzt?"
+      }
+    },
+    "pregnancy_016_green": {
+      "version": 1,
+      "text": {
+        "en": "Was the amniotic fluid green?",
+        "da": "Var fostervandet grønt?",
+        "de": "War das Fruchtwasser grün?"
+      }
+    },
+    "pregnancy_016_brown": {
+      "version": 1,
+      "text": {
+        "en": "Was the amniotic fluid brown?",
+        "da": "Var fostervandet brunt?",
+        "de": "War das Fruchtwasser braun?"
+      }
+    },
+    "pregnancy_017": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel the urge to push?",
+        "da": "Føler du trang til at presse?",
+        "de": "Haben Sie den Drang zu pressen?"
+      }
+    },
+    "pregnancy_018": {
+      "version": 1,
+      "text": {
+        "en": "Have you given birth before?",
+        "da": "Har du født før?",
+        "de": "Haben Sie schon einmal ein Kind geboren?"
+      }
+    },
+    "pregnancy_019": {
+      "version": 1,
+      "text": {
+        "en": "How many times have you given birth?",
+        "da": "Hvor mange gange har du født?",
+        "de": "Wie oft haben Sie ein Kind geboren?"
+      }
+    },
+    "pregnancy_020": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a caesarean birth?",
+        "da": "Har du tidligere fået kejsersnit?",
+        "de": "Hatten Sie schon einmal einen Kaiserschnitt?"
+      }
+    },
+    "pregnancy_021": {
+      "version": 1,
+      "text": {
+        "en": "Have you been told there are complications in this pregnancy?",
+        "da": "Har du fået at vide, at der er komplikationer i denne graviditet?",
+        "de": "Wurde Ihnen gesagt, dass es bei dieser Schwangerschaft Komplikationen gibt?"
+      }
+    },
+    "pregnancy_022": {
+      "version": 1,
+      "text": {
+        "en": "Have you been told you are expecting more than one baby?",
+        "da": "Har du fået at vide, at du venter mere end ét barn?",
+        "de": "Wurde Ihnen gesagt, dass Sie mehr als ein Baby erwarten?"
+      }
+    },
+    "pregnancy_023": {
+      "version": 1,
+      "text": {
+        "en": "Have you given birth within the last six weeks?",
+        "da": "Har du født inden for de sidste seks uger?",
+        "de": "Haben Sie innerhalb der letzten sechs Wochen ein Kind geboren?"
+      }
+    },
+    "pregnancy_024": {
+      "version": 1,
+      "text": {
+        "en": "When did you give birth?",
+        "da": "Hvornår fødte du?",
+        "de": "Wann haben Sie Ihr Kind geboren?"
+      }
+    },
+    "pregnancy_025": {
+      "version": 1,
+      "text": {
+        "en": "Have you had heavy bleeding after giving birth?",
+        "da": "Har du haft kraftig blødning efter fødslen?",
+        "de": "Hatten Sie nach der Geburt starke Blutungen?"
+      }
+    },
+    "back_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you have neck pain?",
+        "da": "Har du ondt i nakken?",
+        "de": "Haben Sie Nackenschmerzen?"
+      }
+    },
+    "back_002": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in your upper back?",
+        "da": "Har du smerter i den øverste del af ryggen?",
+        "de": "Haben Sie Schmerzen im oberen Rücken?"
+      }
+    },
+    "back_003": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in your lower back?",
+        "da": "Har du smerter i lænden?",
+        "de": "Haben Sie Schmerzen im unteren Rücken?"
+      }
+    },
+    "back_004": {
+      "version": 1,
+      "text": {
+        "en": "Did the back pain start after lifting something?",
+        "da": "Begyndte rygsmerterne efter et løft?",
+        "de": "Haben die Rückenschmerzen begonnen, nachdem Sie etwas gehoben haben?"
+      }
+    },
+    "back_005": {
+      "version": 1,
+      "text": {
+        "en": "Does the back pain spread down a leg?",
+        "da": "Breder rygsmerterne sig ned i et ben?",
+        "de": "Strahlen die Rückenschmerzen in ein Bein aus?"
+      }
+    },
+    "back_006_genitals": {
+      "version": 1,
+      "text": {
+        "en": "Do you have new numbness around your genitals?",
+        "da": "Har du ny følelsesløshed omkring kønsorganerne?",
+        "de": "Haben Sie neu aufgetretene Taubheitsgefühle im Bereich Ihrer Geschlechtsorgane?"
+      }
+    },
+    "back_006_anus": {
+      "version": 1,
+      "text": {
+        "en": "Do you have new numbness around your anus?",
+        "da": "Har du ny følelsesløshed omkring endetarmsåbningen?",
+        "de": "Haben Sie neu aufgetretene Taubheitsgefühle im Bereich Ihres Afters?"
+      }
+    },
+    "back_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently lost control of your bladder?",
+        "da": "Har du for nylig mistet kontrollen over din vandladning?",
+        "de": "Haben Sie seit Kurzem die Kontrolle über Ihre Blase verloren?"
+      }
+    },
+    "back_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently lost control of your bowel movements?",
+        "da": "Har du for nylig mistet kontrollen over din afføring?",
+        "de": "Haben Sie seit Kurzem die Kontrolle über Ihren Stuhlgang verloren?"
+      }
+    },
+    "back_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had spinal surgery?",
+        "da": "Har du tidligere haft en rygoperation?",
+        "de": "Wurden Sie schon einmal an der Wirbelsäule operiert?"
+      }
+    },
+    "back_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a slipped disc?",
+        "da": "Har du tidligere haft en diskusprolaps?",
+        "de": "Hatten Sie schon einmal einen Bandscheibenvorfall?"
+      }
+    },
+    "limbs_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in an arm?",
+        "da": "Har du smerter i en arm?",
+        "de": "Haben Sie Schmerzen in einem Arm?"
+      }
+    },
+    "limbs_002": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in a leg?",
+        "da": "Har du smerter i et ben?",
+        "de": "Haben Sie Schmerzen in einem Bein?"
+      }
+    },
+    "limbs_003": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in a joint?",
+        "da": "Har du smerter i et led?",
+        "de": "Haben Sie Schmerzen in einem Gelenk?"
+      }
+    },
+    "limbs_004": {
+      "version": 1,
+      "text": {
+        "en": "Is a joint swollen?",
+        "da": "Er et led hævet?",
+        "de": "Ist ein Gelenk geschwollen?"
+      }
+    },
+    "limbs_005": {
+      "version": 1,
+      "text": {
+        "en": "Does a joint feel warmer than usual?",
+        "da": "Føles et led varmere end normalt?",
+        "de": "Fühlt sich ein Gelenk wärmer an als sonst?"
+      }
+    },
+    "limbs_006": {
+      "version": 1,
+      "text": {
+        "en": "Is the skin over a joint red?",
+        "da": "Er huden over et led rød?",
+        "de": "Ist die Haut über einem Gelenk gerötet?"
+      }
+    },
+    "limbs_007": {
+      "version": 1,
+      "text": {
+        "en": "Are you having difficulty moving a joint?",
+        "da": "Har du problemer med at bevæge et led?",
+        "de": "Haben Sie Schwierigkeiten, ein Gelenk zu bewegen?"
+      }
+    },
+    "limbs_008": {
+      "version": 1,
+      "text": {
+        "en": "Can you put weight on the affected leg?",
+        "da": "Kan du støtte på det berørte ben?",
+        "de": "Können Sie das betroffene Bein belasten?"
+      }
+    },
+    "limbs_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you have pain in your calf?",
+        "da": "Har du smerter i læggen?",
+        "de": "Haben Sie Schmerzen in der Wade?"
+      }
+    },
+    "limbs_010_hand": {
+      "version": 1,
+      "text": {
+        "en": "Does the affected hand feel colder than usual?",
+        "da": "Føles den berørte hånd koldere end normalt?",
+        "de": "Fühlt sich die betroffene Hand kälter an als sonst?"
+      }
+    },
+    "limbs_010_foot": {
+      "version": 1,
+      "text": {
+        "en": "Does the affected foot feel colder than usual?",
+        "da": "Føles den berørte fod koldere end normalt?",
+        "de": "Fühlt sich der betroffene Fuß kälter an als sonst?"
+      }
+    },
+    "limbs_011_hand": {
+      "version": 1,
+      "text": {
+        "en": "Has sensation in the affected hand changed?",
+        "da": "Har følesansen i den berørte hånd ændret sig?",
+        "de": "Hat sich das Empfinden in der betroffenen Hand verändert?"
+      }
+    },
+    "limbs_011_foot": {
+      "version": 1,
+      "text": {
+        "en": "Has sensation in the affected foot changed?",
+        "da": "Har følesansen i den berørte fod ændret sig?",
+        "de": "Hat sich das Empfinden im betroffenen Fuß verändert?"
+      }
+    },
+    "limbs_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you injured this area?",
+        "da": "Har du fået en skade på dette område?",
+        "de": "Haben Sie sich an dieser Stelle verletzt?"
+      }
+    },
+    "limbs_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a fracture in this area?",
+        "da": "Har du tidligere haft et brud i dette område?",
+        "de": "Hatten Sie an dieser Stelle schon einmal einen Knochenbruch?"
+      }
+    },
+    "limbs_014": {
+      "version": 1,
+      "text": {
+        "en": "Do you have an artificial joint in this area?",
+        "da": "Har du et kunstigt led i dette område?",
+        "de": "Haben Sie an dieser Stelle ein künstliches Gelenk?"
+      }
+    },
+    "limbs_015": {
+      "version": 1,
+      "text": {
+        "en": "Do you usually need mobility aids to walk?",
+        "da": "Har du normalt brug for hjælpemidler for at gå?",
+        "de": "Benötigen Sie normalerweise Gehhilfen?"
+      }
+    },
+    "skin_001": {
+      "version": 1,
+      "text": {
+        "en": "Have you developed a rash?",
+        "da": "Har du fået udslæt?",
+        "de": "Haben Sie einen Hautausschlag bekommen?"
+      }
+    },
+    "skin_002": {
+      "version": 1,
+      "text": {
+        "en": "Is your skin itchy?",
+        "da": "Klør huden?",
+        "de": "Juckt Ihre Haut?"
+      }
+    },
+    "skin_003": {
+      "version": 1,
+      "text": {
+        "en": "Have you developed swelling in your skin?",
+        "da": "Har du fået hævelser i huden?",
+        "de": "Haben sich Schwellungen an Ihrer Haut entwickelt?"
+      }
+    },
+    "skin_004": {
+      "version": 1,
+      "text": {
+        "en": "Have you developed blisters on your skin?",
+        "da": "Har du fået blærer på huden?",
+        "de": "Haben sich Blasen auf Ihrer Haut entwickelt?"
+      }
+    },
+    "skin_005_red": {
+      "version": 1,
+      "text": {
+        "en": "Have you developed new red spots on your skin?",
+        "da": "Har du fået nye røde pletter på huden?",
+        "de": "Haben Sie neue rote Flecken auf der Haut bekommen?"
+      }
+    },
+    "skin_005_purple": {
+      "version": 1,
+      "text": {
+        "en": "Have you developed new purple spots on your skin?",
+        "da": "Har du fået nye lilla pletter på huden?",
+        "de": "Haben Sie neue violette Flecken auf der Haut bekommen?"
+      }
+    },
+    "skin_006": {
+      "version": 1,
+      "text": {
+        "en": "Have you noticed the skin becoming redder?",
+        "da": "Har du bemærket, at huden bliver mere rød?",
+        "de": "Haben Sie bemerkt, dass die Haut röter wird?"
+      }
+    },
+    "skin_007": {
+      "version": 1,
+      "text": {
+        "en": "Does the area feel warm?",
+        "da": "Føles området varmt?",
+        "de": "Fühlt sich die Stelle warm an?"
+      }
+    },
+    "skin_008": {
+      "version": 1,
+      "text": {
+        "en": "Is pus coming from a wound?",
+        "da": "Kommer der pus fra et sår?",
+        "de": "Tritt Eiter aus einer Wunde aus?"
+      }
+    },
+    "skin_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a wound that is not healing?",
+        "da": "Har du et sår, som ikke vil hele?",
+        "de": "Haben Sie eine Wunde, die nicht heilt?"
+      }
+    },
+    "skin_010": {
+      "version": 1,
+      "text": {
+        "en": "Did the rash appear suddenly?",
+        "da": "Er udslættet kommet pludseligt?",
+        "de": "Ist der Hautausschlag plötzlich aufgetreten?"
+      }
+    },
+    "skin_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you been stung by an insect?",
+        "da": "Har du været udsat for et insektstik?",
+        "de": "Wurden Sie von einem Insekt gestochen?"
+      }
+    },
+    "skin_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you been exposed to something you know you are allergic to?",
+        "da": "Har du været i kontakt med noget, som du ved, du er allergisk over for?",
+        "de": "Waren Sie etwas ausgesetzt, auf das Sie bekanntermaßen allergisch reagieren?"
+      }
+    },
+    "skin_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you suffered a burn?",
+        "da": "Har du fået en forbrænding?",
+        "de": "Haben Sie sich verbrannt?"
+      }
+    },
+    "skin_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you been exposed to extreme heat?",
+        "da": "Har du været udsat for stærk varme?",
+        "de": "Waren Sie extremer Hitze ausgesetzt?"
+      }
+    },
+    "skin_015": {
+      "version": 1,
+      "text": {
+        "en": "Have you been exposed to extreme cold?",
+        "da": "Har du været udsat for stærk kulde?",
+        "de": "Waren Sie extremer Kälte ausgesetzt?"
+      }
+    },
+    "allergy_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you have any known allergies?",
+        "da": "Har du nogen kendte allergier?",
+        "de": "Sind bei Ihnen Allergien bekannt?"
+      }
+    },
+    "allergy_002": {
+      "version": 1,
+      "text": {
+        "en": "Are you allergic to any medicine?",
+        "da": "Har du allergi over for medicin?",
+        "de": "Sind Sie gegen ein Medikament allergisch?"
+      }
+    },
+    "allergy_003": {
+      "version": 1,
+      "text": {
+        "en": "Are you allergic to penicillin?",
+        "da": "Har du allergi over for penicillin?",
+        "de": "Sind Sie gegen Penicillin allergisch?"
+      }
+    },
+    "allergy_004": {
+      "version": 1,
+      "text": {
+        "en": "Are you allergic to aspirin?",
+        "da": "Har du allergi over for acetylsalicylsyre?",
+        "de": "Sind Sie gegen Aspirin allergisch?"
+      }
+    },
+    "allergy_005": {
+      "version": 1,
+      "text": {
+        "en": "Are you allergic to ibuprofen?",
+        "da": "Har du allergi over for ibuprofen?",
+        "de": "Sind Sie gegen Ibuprofen allergisch?"
+      }
+    },
+    "allergy_006": {
+      "version": 1,
+      "text": {
+        "en": "Are you allergic to latex?",
+        "da": "Har du allergi over for latex?",
+        "de": "Sind Sie gegen Latex allergisch?"
+      }
+    },
+    "allergy_007": {
+      "version": 1,
+      "text": {
+        "en": "Are you allergic to any foods?",
+        "da": "Har du allergi over for fødevarer?",
+        "de": "Sind Sie gegen bestimmte Lebensmittel allergisch?"
+      }
+    },
+    "allergy_008": {
+      "version": 1,
+      "text": {
+        "en": "Are you allergic to insect stings?",
+        "da": "Har du allergi over for insektstik?",
+        "de": "Sind Sie gegen Insektenstiche allergisch?"
+      }
+    },
+    "allergy_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a severe allergic reaction?",
+        "da": "Har du tidligere haft en alvorlig allergisk reaktion?",
+        "de": "Hatten Sie schon einmal eine schwere allergische Reaktion?"
+      }
+    },
+    "allergy_010": {
+      "version": 1,
+      "text": {
+        "en": "Do you have an adrenaline auto-injector for allergic reactions?",
+        "da": "Har du en adrenalinpen til allergiske reaktioner?",
+        "de": "Haben Sie einen Adrenalin-Autoinjektor für allergische Reaktionen?"
+      }
+    },
+    "allergy_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you used an adrenaline auto-injector today?",
+        "da": "Har du brugt en adrenalinpen i dag?",
+        "de": "Haben Sie heute einen Adrenalin-Autoinjektor benutzt?"
+      }
+    },
+    "allergy_012": {
+      "version": 1,
+      "text": {
+        "en": "When did you last use an adrenaline auto-injector today?",
+        "da": "Hvornår brugte du senest en adrenalinpen i dag?",
+        "de": "Wann haben Sie heute zuletzt einen Adrenalin-Autoinjektor benutzt?"
+      }
+    },
+    "allergy_013": {
+      "version": 1,
+      "text": {
+        "en": "Can you show us a list of your allergies?",
+        "da": "Kan du vise os en liste over dine allergier?",
+        "de": "Können Sie uns eine Liste Ihrer Allergien zeigen?"
+      }
+    },
+    "allergy_014": {
+      "version": 1,
+      "text": {
+        "en": "Can you show us what you reacted to?",
+        "da": "Kan du vise os, hvad du reagerede på?",
+        "de": "Können Sie uns zeigen, worauf Sie reagiert haben?"
+      }
+    },
+    "medication_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you take medication regularly?",
+        "da": "Tager du medicin fast?",
+        "de": "Nehmen Sie regelmäßig Medikamente?"
+      }
+    },
+    "medication_002": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a medication list that we can see?",
+        "da": "Har du en medicinliste, som vi kan se?",
+        "de": "Haben Sie einen Medikamentenplan, den wir sehen können?"
+      }
+    },
+    "medication_003": {
+      "version": 1,
+      "text": {
+        "en": "Can you show us your medication?",
+        "da": "Kan du vise os din medicin?",
+        "de": "Können Sie uns Ihre Medikamente zeigen?"
+      }
+    },
+    "medication_004": {
+      "version": 1,
+      "text": {
+        "en": "Do you take medication to reduce blood clotting?",
+        "da": "Tager du blodfortyndende medicin?",
+        "de": "Nehmen Sie Medikamente zur Hemmung der Blutgerinnung?"
+      }
+    },
+    "medication_005": {
+      "version": 1,
+      "text": {
+        "en": "Do you take insulin?",
+        "da": "Tager du insulin?",
+        "de": "Nehmen Sie Insulin?"
+      }
+    },
+    "medication_006": {
+      "version": 1,
+      "text": {
+        "en": "Do you take tablets for diabetes?",
+        "da": "Tager du tabletter mod diabetes?",
+        "de": "Nehmen Sie Tabletten gegen Diabetes?"
+      }
+    },
+    "medication_007": {
+      "version": 1,
+      "text": {
+        "en": "Do you take medication for high blood pressure?",
+        "da": "Tager du medicin mod forhøjet blodtryk?",
+        "de": "Nehmen Sie Medikamente gegen Bluthochdruck?"
+      }
+    },
+    "medication_008": {
+      "version": 1,
+      "text": {
+        "en": "Do you take medication for epilepsy?",
+        "da": "Tager du medicin mod epilepsi?",
+        "de": "Nehmen Sie Medikamente gegen Epilepsie?"
+      }
+    },
+    "medication_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you take medication that suppresses your immune system?",
+        "da": "Tager du medicin, der dæmper immunforsvaret?",
+        "de": "Nehmen Sie Medikamente, die Ihr Immunsystem unterdrücken?"
+      }
+    },
+    "medication_010": {
+      "version": 1,
+      "text": {
+        "en": "Do you take medication for depression?",
+        "da": "Tager du medicin mod depression?",
+        "de": "Nehmen Sie Medikamente gegen Depressionen?"
+      }
+    },
+    "medication_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you take medication that makes you sleepy or sedated?",
+        "da": "Tager du medicin, der virker sløvende?",
+        "de": "Nehmen Sie Medikamente, die Sie schläfrig machen oder beruhigen?"
+      }
+    },
+    "medication_012": {
+      "version": 1,
+      "text": {
+        "en": "Do you take strong pain-relieving medicines such as morphine?",
+        "da": "Tager du stærke smertestillende lægemidler som morfin?",
+        "de": "Nehmen Sie starke Schmerzmittel wie Morphin?"
+      }
+    },
+    "medication_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken your usual medication today?",
+        "da": "Har du taget din sædvanlige medicin i dag?",
+        "de": "Haben Sie heute Ihre üblichen Medikamente genommen?"
+      }
+    },
+    "medication_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you missed any of your usual medication?",
+        "da": "Har du glemt at tage noget af din sædvanlige medicin?",
+        "de": "Haben Sie eines Ihrer üblichen Medikamente ausgelassen?"
+      }
+    },
+    "medication_015": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently started a new medication?",
+        "da": "Er du begyndt på ny medicin for nylig?",
+        "de": "Haben Sie vor Kurzem mit einem neuen Medikament begonnen?"
+      }
+    },
+    "medication_016": {
+      "version": 1,
+      "text": {
+        "en": "Has the dose of any of your medication recently changed?",
+        "da": "Er din medicindosis blevet ændret for nylig?",
+        "de": "Wurde die Dosis eines Ihrer Medikamente vor Kurzem geändert?"
+      }
+    },
+    "medication_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken more medication than prescribed?",
+        "da": "Har du taget mere medicin end ordineret?",
+        "de": "Haben Sie mehr Medikamente genommen als verordnet?"
+      }
+    },
+    "medication_018": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken pain-relieving medicine today?",
+        "da": "Har du taget smertestillende medicin i dag?",
+        "de": "Haben Sie heute Schmerzmittel genommen?"
+      }
+    },
+    "medication_019": {
+      "version": 1,
+      "text": {
+        "en": "When did you last take pain-relieving medicine?",
+        "da": "Hvornår tog du sidst smertestillende medicin?",
+        "de": "Wann haben Sie zuletzt Schmerzmittel genommen?"
+      }
+    },
+    "medication_020": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken medicine for chest pain today?",
+        "da": "Har du taget medicin mod brystsmerter i dag?",
+        "de": "Haben Sie heute Medikamente gegen Schmerzen im Brustkorb genommen?"
+      }
+    },
+    "medication_021": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken nitroglycerin today?",
+        "da": "Har du taget nitroglycerin i dag?",
+        "de": "Haben Sie heute Nitroglycerin genommen?"
+      }
+    },
+    "medication_022": {
+      "version": 1,
+      "text": {
+        "en": "Has anyone else given you medication since your symptoms began?",
+        "da": "Har du fået medicin af andre, siden symptomerne begyndte?",
+        "de": "Hat Ihnen jemand anderes seit Beginn Ihrer Beschwerden Medikamente gegeben?"
+      }
+    },
+    "medication_023": {
+      "version": 1,
+      "text": {
+        "en": "Have you vomited after taking your medication?",
+        "da": "Har du kastet op efter at have taget din medicin?",
+        "de": "Haben Sie nach der Einnahme Ihrer Medikamente erbrochen?"
+      }
+    },
+    "history_001": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a chronic illness?",
+        "da": "Har du en kronisk sygdom?",
+        "de": "Haben Sie eine chronische Erkrankung?"
+      }
+    },
+    "history_002": {
+      "version": 1,
+      "text": {
+        "en": "Do you have diabetes?",
+        "da": "Har du diabetes?",
+        "de": "Haben Sie Diabetes?"
+      }
+    },
+    "history_003": {
+      "version": 1,
+      "text": {
+        "en": "Do you have type 1 diabetes?",
+        "da": "Har du type 1-diabetes?",
+        "de": "Haben Sie Typ-1-Diabetes?"
+      }
+    },
+    "history_004": {
+      "version": 1,
+      "text": {
+        "en": "Do you have type 2 diabetes?",
+        "da": "Har du type 2-diabetes?",
+        "de": "Haben Sie Typ-2-Diabetes?"
+      }
+    },
+    "history_005": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with kidney disease?",
+        "da": "Har du kendt nyresygdom?",
+        "de": "Wurde bei Ihnen eine Nierenerkrankung festgestellt?"
+      }
+    },
+    "history_006": {
+      "version": 1,
+      "text": {
+        "en": "Do you receive dialysis?",
+        "da": "Får du dialyse?",
+        "de": "Erhalten Sie Dialysebehandlungen?"
+      }
+    },
+    "history_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you missed a scheduled dialysis treatment?",
+        "da": "Er du gået glip af en planlagt dialysebehandling?",
+        "de": "Haben Sie eine geplante Dialysebehandlung versäumt?"
+      }
+    },
+    "history_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with liver disease?",
+        "da": "Har du kendt leversygdom?",
+        "de": "Wurde bei Ihnen eine Lebererkrankung festgestellt?"
+      }
+    },
+    "history_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with a bleeding disorder?",
+        "da": "Har du en kendt blødningssygdom?",
+        "de": "Wurde bei Ihnen eine Blutgerinnungsstörung festgestellt?"
+      }
+    },
+    "history_010": {
+      "version": 1,
+      "text": {
+        "en": "Do you have cancer?",
+        "da": "Har du en kræftsygdom?",
+        "de": "Haben Sie Krebs?"
+      }
+    },
+    "history_011": {
+      "version": 1,
+      "text": {
+        "en": "Are you currently receiving cancer treatment?",
+        "da": "Får du kræftbehandling lige nu?",
+        "de": "Erhalten Sie derzeit eine Krebsbehandlung?"
+      }
+    },
+    "history_012": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a weakened immune system?",
+        "da": "Har du et svækket immunforsvar?",
+        "de": "Ist Ihr Immunsystem geschwächt?"
+      }
+    },
+    "history_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously had a blood clot in your leg?",
+        "da": "Har du tidligere haft en blodprop i benet?",
+        "de": "Hatten Sie schon einmal ein Blutgerinnsel im Bein?"
+      }
+    },
+    "history_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently been admitted to hospital?",
+        "da": "Har du været indlagt på hospitalet for nylig?",
+        "de": "Wurden Sie vor Kurzem im Krankenhaus aufgenommen?"
+      }
+    },
+    "history_015": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently had surgery?",
+        "da": "Har du været opereret for nylig?",
+        "de": "Wurden Sie vor Kurzem operiert?"
+      }
+    },
+    "history_016": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with a mental health condition?",
+        "da": "Har du en kendt psykisk lidelse?",
+        "de": "Wurde bei Ihnen eine psychische Erkrankung festgestellt?"
+      }
+    },
+    "history_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you been diagnosed with a neurological condition?",
+        "da": "Har du en kendt neurologisk sygdom?",
+        "de": "Wurde bei Ihnen eine neurologische Erkrankung festgestellt?"
+      }
+    },
+    "history_018": {
+      "version": 1,
+      "text": {
+        "en": "Are you normally able to manage everyday activities independently?",
+        "da": "Kan du normalt klare dig selv i hverdagen?",
+        "de": "Können Sie Ihren Alltag normalerweise selbstständig bewältigen?"
+      }
+    },
+    "history_019": {
+      "version": 1,
+      "text": {
+        "en": "Do you normally need help taking your medication?",
+        "da": "Har du normalt brug for hjælp til at tage din medicin?",
+        "de": "Benötigen Sie normalerweise Hilfe bei der Einnahme Ihrer Medikamente?"
+      }
+    },
+    "history_020": {
+      "version": 1,
+      "text": {
+        "en": "Do you normally need help moving around?",
+        "da": "Har du normalt brug for hjælp til at komme omkring?",
+        "de": "Benötigen Sie normalerweise Hilfe, um sich fortzubewegen?"
+      }
+    },
+    "history_021": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a document describing your wishes for emergency treatment?",
+        "da": "Har du et dokument om dine ønsker til akut behandling?",
+        "de": "Haben Sie ein Dokument, das Ihre Wünsche zur Notfallbehandlung beschreibt?"
+      }
+    },
+    "intake_001": {
+      "version": 1,
+      "text": {
+        "en": "Have you eaten today?",
+        "da": "Har du spist i dag?",
+        "de": "Haben Sie heute gegessen?"
+      }
+    },
+    "intake_002_breakfast": {
+      "version": 1,
+      "text": {
+        "en": "Have you eaten breakfast today?",
+        "da": "Har du spist morgenmad i dag?",
+        "de": "Haben Sie heute gefrühstückt?"
+      }
+    },
+    "intake_002_lunch": {
+      "version": 1,
+      "text": {
+        "en": "Have you eaten lunch today?",
+        "da": "Har du spist middagsmad i dag?",
+        "de": "Haben Sie heute zu Mittag gegessen?"
+      }
+    },
+    "intake_002_dinner": {
+      "version": 1,
+      "text": {
+        "en": "Have you eaten dinner today?",
+        "da": "Har du spist aftensmad i dag?",
+        "de": "Haben Sie heute zu Abend gegessen?"
+      }
+    },
+    "intake_002_six_hours": {
+      "version": 1,
+      "text": {
+        "en": "Have you eaten within the last 6 hours?",
+        "da": "Har du spist inden for de sidste 6 timer?",
+        "de": "Haben Sie innerhalb der letzten 6 Stunden gegessen?"
+      }
+    },
+    "intake_003": {
+      "version": 1,
+      "text": {
+        "en": "Have you had any fluids today?",
+        "da": "Har du drukket væske i dag?",
+        "de": "Haben Sie heute etwas getrunken?"
+      }
+    },
+    "intake_004": {
+      "version": 1,
+      "text": {
+        "en": "When did you last drink something?",
+        "da": "Hvornår drak du sidst noget?",
+        "de": "Wann haben Sie zuletzt etwas getrunken?"
+      }
+    },
+    "intake_005": {
+      "version": 1,
+      "text": {
+        "en": "Have you drunk less than usual today?",
+        "da": "Har du drukket mindre end normalt i dag?",
+        "de": "Haben Sie heute weniger getrunken als sonst?"
+      }
+    },
+    "intake_006": {
+      "version": 1,
+      "text": {
+        "en": "Have you eaten less than usual today?",
+        "da": "Har du spist mindre end normalt i dag?",
+        "de": "Haben Sie heute weniger gegessen als sonst?"
+      }
+    },
+    "intake_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you had difficulty eating over the past few days?",
+        "da": "Har du haft svært ved at spise i de sidste par dage?",
+        "de": "Hatten Sie in den letzten Tagen Schwierigkeiten beim Essen?"
+      }
+    },
+    "intake_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you been fasting?",
+        "da": "Har du fastet?",
+        "de": "Haben Sie gefastet?"
+      }
+    },
+    "intake_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently eaten something unusual?",
+        "da": "Har du spist noget usædvanligt for nylig?",
+        "de": "Haben Sie vor Kurzem etwas Ungewöhnliches gegessen?"
+      }
+    },
+    "events_001": {
+      "version": 2,
+      "text": {
+        "en": "When did your current symptoms start?",
+        "da": "Hvornår begyndte dine aktuelle symptomer?",
+        "de": "Wann haben Ihre jetzigen Beschwerden begonnen?"
+      }
+    },
+    "events_002": {
+      "version": 1,
+      "text": {
+        "en": "Did the symptoms start suddenly?",
+        "da": "Begyndte symptomerne pludseligt?",
+        "de": "Haben die Beschwerden plötzlich begonnen?"
+      }
+    },
+    "events_003": {
+      "version": 1,
+      "text": {
+        "en": "Did the symptoms start while you were resting?",
+        "da": "Begyndte symptomerne, mens du hvilede?",
+        "de": "Haben die Beschwerden in Ruhe begonnen?"
+      }
+    },
+    "events_004": {
+      "version": 1,
+      "text": {
+        "en": "Did the symptoms start during physical activity?",
+        "da": "Begyndte symptomerne under fysisk aktivitet?",
+        "de": "Haben die Beschwerden bei körperlicher Aktivität begonnen?"
+      }
+    },
+    "events_005": {
+      "version": 1,
+      "text": {
+        "en": "Did the symptoms start during a meal?",
+        "da": "Begyndte symptomerne under et måltid?",
+        "de": "Haben die Beschwerden während einer Mahlzeit begonnen?"
+      }
+    },
+    "events_006": {
+      "version": 1,
+      "text": {
+        "en": "Did the symptoms start after an injury?",
+        "da": "Begyndte symptomerne efter en skade?",
+        "de": "Haben die Beschwerden nach einer Verletzung begonnen?"
+      }
+    },
+    "events_007": {
+      "version": 1,
+      "text": {
+        "en": "Were you alone when the symptoms started?",
+        "da": "Var du alene, da symptomerne begyndte?",
+        "de": "Waren Sie allein, als die Beschwerden begonnen haben?"
+      }
+    },
+    "events_008": {
+      "version": 1,
+      "text": {
+        "en": "Did anyone see what happened?",
+        "da": "Var der nogen, som så, hvad der skete?",
+        "de": "Hat jemand gesehen, was passiert ist?"
+      }
+    },
+    "events_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you already spoken to a healthcare professional about this today?",
+        "da": "Har du allerede talt med en sundhedsperson om dette i dag?",
+        "de": "Haben Sie heute deswegen bereits mit einer medizinischen Fachperson gesprochen?"
+      }
+    },
+    "events_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you been in close contact with anyone who has been ill?",
+        "da": "Har du haft tæt kontakt med nogen, der har været syge?",
+        "de": "Hatten Sie engen Kontakt mit einer erkrankten Person?"
+      }
+    },
+    "events_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently been on a long journey?",
+        "da": "Har du været på en længere rejse for nylig?",
+        "de": "Haben Sie vor Kurzem eine lange Reise gemacht?"
+      }
+    },
+    "events_012_bed": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently been confined to bed for several days?",
+        "da": "Har du været sengeliggende i flere dage for nylig?",
+        "de": "Waren Sie vor Kurzem mehrere Tage bettlägerig?"
+      }
+    },
+    "events_012_seated": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently been sitting still for several days?",
+        "da": "Har du for nylig siddet stille i flere dage?",
+        "de": "Haben Sie vor Kurzem mehrere Tage still gesessen?"
+      }
+    },
+    "events_013": {
+      "version": 1,
+      "text": {
+        "en": "Do you smoke tobacco?",
+        "da": "Ryger du tobak?",
+        "de": "Rauchen Sie Tabak?"
+      }
+    },
+    "events_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you smoked tobacco in the past?",
+        "da": "Har du tidligere røget tobak?",
+        "de": "Haben Sie früher Tabak geraucht?"
+      }
+    },
+    "events_015": {
+      "version": 1,
+      "text": {
+        "en": "Do you have close relatives who developed heart disease at a young age?",
+        "da": "Har du nære slægtninge, som har fået hjertesygdom i en ung alder?",
+        "de": "Haben Sie nahe Verwandte, die in jungen Jahren eine Herzerkrankung bekommen haben?"
+      }
+    },
+    "events_016": {
+      "version": 1,
+      "text": {
+        "en": "Do you currently have a known infectious illness?",
+        "da": "Har du en kendt smitsom sygdom lige nu?",
+        "de": "Haben Sie derzeit eine bekannte Infektionskrankheit?"
+      }
+    },
+    "metabolic_001": {
+      "version": 1,
+      "text": {
+        "en": "Have you measured your blood glucose today?",
+        "da": "Har du målt dit blodsukker i dag?",
+        "de": "Haben Sie heute Ihren Blutzucker gemessen?"
+      }
+    },
+    "metabolic_002": {
+      "version": 1,
+      "text": {
+        "en": "What was your most recent blood glucose reading?",
+        "da": "Hvad viste din seneste blodsukkermåling?",
+        "de": "Wie hoch war Ihr zuletzt gemessener Blutzuckerwert?"
+      }
+    },
+    "metabolic_003": {
+      "version": 1,
+      "text": {
+        "en": "When did you last measure your blood glucose?",
+        "da": "Hvornår målte du sidst dit blodsukker?",
+        "de": "Wann haben Sie zuletzt Ihren Blutzucker gemessen?"
+      }
+    },
+    "metabolic_004": {
+      "version": 1,
+      "text": {
+        "en": "Has your blood glucose been lower than usual today?",
+        "da": "Har dit blodsukker været lavere end normalt i dag?",
+        "de": "War Ihr Blutzucker heute niedriger als sonst?"
+      }
+    },
+    "metabolic_005": {
+      "version": 1,
+      "text": {
+        "en": "Has your blood glucose been higher than usual today?",
+        "da": "Har dit blodsukker været højere end normalt i dag?",
+        "de": "War Ihr Blutzucker heute höher als sonst?"
+      }
+    },
+    "metabolic_006": {
+      "version": 1,
+      "text": {
+        "en": "Have you had similar symptoms when your blood glucose was low?",
+        "da": "Har du haft lignende symptomer, når dit blodsukker har været lavt?",
+        "de": "Hatten Sie ähnliche Beschwerden, als Ihr Blutzucker niedrig war?"
+      }
+    },
+    "metabolic_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken insulin today?",
+        "da": "Har du taget insulin i dag?",
+        "de": "Haben Sie heute Insulin genommen?"
+      }
+    },
+    "metabolic_008": {
+      "version": 1,
+      "text": {
+        "en": "When did you last take insulin?",
+        "da": "Hvornår tog du sidst insulin?",
+        "de": "Wann haben Sie zuletzt Insulin genommen?"
+      }
+    },
+    "metabolic_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you use an insulin pump?",
+        "da": "Bruger du en insulinpumpe?",
+        "de": "Benutzen Sie eine Insulinpumpe?"
+      }
+    },
+    "metabolic_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you had problems with your insulin pump today?",
+        "da": "Har der været problemer med din insulinpumpe i dag?",
+        "de": "Hatten Sie heute Probleme mit Ihrer Insulinpumpe?"
+      }
+    },
+    "metabolic_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you use a glucose sensor?",
+        "da": "Bruger du en sensor til at måle blodsukkeret?",
+        "de": "Benutzen Sie einen Glukosesensor?"
+      }
+    },
+    "metabolic_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you measured ketones today?",
+        "da": "Har du målt ketoner i dag?",
+        "de": "Haben Sie heute Ketone gemessen?"
+      }
+    },
+    "metabolic_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you urinated more than usual over the past few days?",
+        "da": "Har du tisset mere end normalt de seneste dage?",
+        "de": "Haben Sie in den letzten Tagen mehr Wasser gelassen als sonst?"
+      }
+    },
+    "metabolic_014": {
+      "version": 1,
+      "text": {
+        "en": "Have you consumed sugar to treat low blood glucose today?",
+        "da": "Har du indtaget sukker for at behandle lavt blodsukker i dag?",
+        "de": "Haben Sie heute Zucker zu sich genommen, um einen niedrigen Blutzucker zu behandeln?"
+      }
+    },
+    "trauma_001": {
+      "version": 1,
+      "text": {
+        "en": "Have you fallen?",
+        "da": "Er du faldet?",
+        "de": "Sind Sie gestürzt?"
+      }
+    },
+    "trauma_002": {
+      "version": 1,
+      "text": {
+        "en": "Did you fall from a height?",
+        "da": "Faldt du fra en højde?",
+        "de": "Sind Sie aus einer Höhe gestürzt?"
+      }
+    },
+    "trauma_003": {
+      "version": 1,
+      "text": {
+        "en": "Approximately how far did you fall in metres?",
+        "da": "Hvor langt faldt du cirka i meter?",
+        "de": "Wie viele Meter sind Sie ungefähr gestürzt?"
+      }
+    },
+    "trauma_004": {
+      "version": 1,
+      "text": {
+        "en": "Did you hit your head?",
+        "da": "Slog du hovedet?",
+        "de": "Haben Sie sich den Kopf gestoßen?"
+      }
+    },
+    "trauma_005": {
+      "version": 1,
+      "text": {
+        "en": "Did you hit your back?",
+        "da": "Slog du ryggen?",
+        "de": "Haben Sie sich den Rücken gestoßen?"
+      }
+    },
+    "trauma_006": {
+      "version": 1,
+      "text": {
+        "en": "Did you hit your neck?",
+        "da": "Slog du nakken?",
+        "de": "Haben Sie sich den Nacken gestoßen?"
+      }
+    },
+    "trauma_007": {
+      "version": 1,
+      "text": {
+        "en": "Were you conscious throughout the event?",
+        "da": "Var du ved bevidsthed under hele hændelsen?",
+        "de": "Waren Sie während des gesamten Ereignisses bei Bewusstsein?"
+      }
+    },
+    "trauma_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you vomited since the injury?",
+        "da": "Har du kastet op efter skaden?",
+        "de": "Haben Sie seit der Verletzung erbrochen?"
+      }
+    },
+    "trauma_009": {
+      "version": 1,
+      "text": {
+        "en": "Were you struck by a vehicle?",
+        "da": "Er du blevet ramt af et køretøj?",
+        "de": "Wurden Sie von einem Fahrzeug angefahren?"
+      }
+    },
+    "trauma_010": {
+      "version": 1,
+      "text": {
+        "en": "Were you inside a vehicle when the crash occurred?",
+        "da": "Sad du i et køretøj, da ulykken skete?",
+        "de": "Waren Sie in einem Fahrzeug, als sich der Unfall ereignete?"
+      }
+    },
+    "trauma_011": {
+      "version": 1,
+      "text": {
+        "en": "Were you wearing a seat belt?",
+        "da": "Havde du sikkerhedssele på?",
+        "de": "Waren Sie angeschnallt?"
+      }
+    },
+    "trauma_012": {
+      "version": 1,
+      "text": {
+        "en": "Were you wearing a helmet?",
+        "da": "Havde du hjelm på?",
+        "de": "Haben Sie einen Helm getragen?"
+      }
+    },
+    "trauma_013": {
+      "version": 1,
+      "text": {
+        "en": "Were you thrown out of the vehicle?",
+        "da": "Blev du kastet ud af køretøjet?",
+        "de": "Wurden Sie aus dem Fahrzeug geschleudert?"
+      }
+    },
+    "trauma_014": {
+      "version": 1,
+      "text": {
+        "en": "Were you trapped?",
+        "da": "Var du fastklemt?",
+        "de": "Waren Sie eingeklemmt?"
+      }
+    },
+    "trauma_015": {
+      "version": 1,
+      "text": {
+        "en": "Has a heavy object compressed part of your body?",
+        "da": "Har en tung genstand klemt en del af din krop?",
+        "de": "Wurde ein Teil Ihres Körpers von einem schweren Gegenstand zusammengedrückt?"
+      }
+    },
+    "trauma_016": {
+      "version": 1,
+      "text": {
+        "en": "Have you been stabbed with a sharp object?",
+        "da": "Er du blevet stukket med en skarp genstand?",
+        "de": "Wurden Sie mit einem scharfen Gegenstand gestochen?"
+      }
+    },
+    "trauma_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you been shot?",
+        "da": "Er du blevet skudt?",
+        "de": "Wurde auf Sie geschossen?"
+      }
+    },
+    "trauma_018": {
+      "version": 1,
+      "text": {
+        "en": "Have you been exposed to an electric current?",
+        "da": "Har du været udsat for elektrisk strøm?",
+        "de": "Waren Sie elektrischem Strom ausgesetzt?"
+      }
+    },
+    "trauma_019_submersion": {
+      "version": 1,
+      "text": {
+        "en": "Were you underwater during the incident?",
+        "da": "Har du været under vand under hændelsen?",
+        "de": "Waren Sie während des Vorfalls unter Wasser?"
+      }
+    },
+    "trauma_019_breathing": {
+      "version": 1,
+      "text": {
+        "en": "Did you have difficulty breathing during the incident?",
+        "da": "Havde du svært ved at få luft under hændelsen?",
+        "de": "Hatten Sie während des Vorfalls Atemnot?"
+      }
+    },
+    "trauma_020": {
+      "version": 1,
+      "text": {
+        "en": "Have you inhaled smoke from a fire?",
+        "da": "Har du indåndet røg fra en brand?",
+        "de": "Haben Sie Rauch von einem Feuer eingeatmet?"
+      }
+    },
+    "trauma_021": {
+      "version": 1,
+      "text": {
+        "en": "Are you bleeding right now?",
+        "da": "Bløder du lige nu?",
+        "de": "Bluten Sie gerade?"
+      }
+    },
+    "trauma_022": {
+      "version": 1,
+      "text": {
+        "en": "Point to where you have been injured.",
+        "da": "Peg på, hvor du er kommet til skade.",
+        "de": "Zeigen Sie, wo Sie verletzt sind."
+      }
+    },
+    "trauma_023": {
+      "version": 1,
+      "text": {
+        "en": "Were you able to walk immediately after the injury?",
+        "da": "Kunne du gå umiddelbart efter skaden?",
+        "de": "Konnten Sie unmittelbar nach der Verletzung gehen?"
+      }
+    },
+    "trauma_024": {
+      "version": 1,
+      "text": {
+        "en": "Have you experienced violence?",
+        "da": "Har du været udsat for vold?",
+        "de": "Haben Sie Gewalt erlebt?"
+      }
+    },
+    "toxic_001": {
+      "version": 1,
+      "text": {
+        "en": "Have you consumed alcohol today?",
+        "da": "Har du drukket alkohol i dag?",
+        "de": "Haben Sie heute Alkohol getrunken?"
+      }
+    },
+    "toxic_002": {
+      "version": 1,
+      "text": {
+        "en": "When did you last drink alcohol?",
+        "da": "Hvornår drak du sidst alkohol?",
+        "de": "Wann haben Sie zuletzt Alkohol getrunken?"
+      }
+    },
+    "toxic_003": {
+      "version": 1,
+      "text": {
+        "en": "Do you usually drink alcohol every day?",
+        "da": "Drikker du normalt alkohol hver dag?",
+        "de": "Trinken Sie normalerweise täglich Alkohol?"
+      }
+    },
+    "toxic_004_stopped": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently stopped your usual alcohol intake?",
+        "da": "Har du for nylig stoppet dit sædvanlige alkoholforbrug?",
+        "de": "Haben Sie vor Kurzem Ihren üblichen Alkoholkonsum eingestellt?"
+      }
+    },
+    "toxic_004_reduced": {
+      "version": 1,
+      "text": {
+        "en": "Have you recently reduced your usual alcohol intake?",
+        "da": "Har du for nylig nedsat dit sædvanlige alkoholforbrug?",
+        "de": "Haben Sie vor Kurzem Ihren üblichen Alkoholkonsum reduziert?"
+      }
+    },
+    "toxic_005": {
+      "version": 1,
+      "text": {
+        "en": "Have you used recreational drugs today?",
+        "da": "Har du brugt rusmidler i dag?",
+        "de": "Haben Sie heute Drogen genommen?"
+      }
+    },
+    "toxic_006": {
+      "version": 1,
+      "text": {
+        "en": "Have you taken substances whose contents you do not know?",
+        "da": "Har du taget stoffer, som du ikke ved, hvad indeholder?",
+        "de": "Haben Sie Substanzen genommen, deren Inhaltsstoffe Sie nicht kennen?"
+      }
+    },
+    "toxic_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you swallowed a substance that may be poisonous?",
+        "da": "Har du indtaget et stof, der kan være giftigt?",
+        "de": "Haben Sie eine möglicherweise giftige Substanz geschluckt?"
+      }
+    },
+    "toxic_008": {
+      "version": 1,
+      "text": {
+        "en": "Have you inhaled a substance that may be poisonous?",
+        "da": "Har du indåndet et stof, der kan være giftigt?",
+        "de": "Haben Sie eine möglicherweise giftige Substanz eingeatmet?"
+      }
+    },
+    "toxic_009": {
+      "version": 1,
+      "text": {
+        "en": "Have you had chemicals on your skin?",
+        "da": "Har du fået kemikalier på huden?",
+        "de": "Hatten Sie Chemikalien auf der Haut?"
+      }
+    },
+    "toxic_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you had chemicals in your eyes?",
+        "da": "Har du fået kemikalier i øjnene?",
+        "de": "Hatten Sie Chemikalien in den Augen?"
+      }
+    },
+    "toxic_011": {
+      "version": 1,
+      "text": {
+        "en": "Have you injected a substance that was not prescribed to you?",
+        "da": "Har du injiceret et stof, som ikke var ordineret til dig?",
+        "de": "Haben Sie sich eine Substanz gespritzt, die Ihnen nicht verordnet wurde?"
+      }
+    },
+    "toxic_012": {
+      "version": 1,
+      "text": {
+        "en": "Can you show us the packaging of the substance you took?",
+        "da": "Kan du vise os emballagen til det stof, du har indtaget?",
+        "de": "Können Sie uns die Verpackung der Substanz zeigen, die Sie genommen haben?"
+      }
+    },
+    "toxic_013": {
+      "version": 1,
+      "text": {
+        "en": "Do you know how much you took?",
+        "da": "Ved du, hvor meget du har indtaget?",
+        "de": "Wissen Sie, wie viel Sie genommen haben?"
+      }
+    },
+    "toxic_014": {
+      "version": 1,
+      "text": {
+        "en": "When did you take the substance?",
+        "da": "Hvornår indtog du stoffet?",
+        "de": "Wann haben Sie die Substanz genommen?"
+      }
+    },
+    "toxic_015": {
+      "version": 1,
+      "text": {
+        "en": "Have others nearby developed similar symptoms?",
+        "da": "Har andre i nærheden fået lignende symptomer?",
+        "de": "Haben andere Personen in der Nähe ähnliche Beschwerden bekommen?"
+      }
+    },
+    "toxic_016": {
+      "version": 1,
+      "text": {
+        "en": "Did you intentionally take the substance to harm yourself?",
+        "da": "Har du bevidst indtaget stoffet for at skade dig selv?",
+        "de": "Haben Sie die Substanz absichtlich genommen, um sich selbst zu schaden?"
+      }
+    },
+    "psych_001": {
+      "version": 1,
+      "text": {
+        "en": "Are you feeling very anxious right now?",
+        "da": "Føler du dig meget angst lige nu?",
+        "de": "Haben Sie gerade große Angst?"
+      }
+    },
+    "psych_002": {
+      "version": 1,
+      "text": {
+        "en": "Are you feeling very sad right now?",
+        "da": "Føler du dig meget trist lige nu?",
+        "de": "Sind Sie gerade sehr traurig?"
+      }
+    },
+    "psych_003": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel unsafe right now?",
+        "da": "Føler du dig utryg lige nu?",
+        "de": "Fühlen Sie sich gerade unsicher?"
+      }
+    },
+    "psych_004": {
+      "version": 1,
+      "text": {
+        "en": "Have you had a sudden episode of intense anxiety?",
+        "da": "Har du haft et pludseligt anfald af stærk angst?",
+        "de": "Hatten Sie plötzlich einen Anfall starker Angst?"
+      }
+    },
+    "psych_005_sounds": {
+      "version": 1,
+      "text": {
+        "en": "Do you hear sounds that other people do not hear?",
+        "da": "Hører du lyde, som andre ikke hører?",
+        "de": "Hören Sie Geräusche, die andere Menschen nicht hören?"
+      }
+    },
+    "psych_005_voices": {
+      "version": 1,
+      "text": {
+        "en": "Do you hear voices that other people do not hear?",
+        "da": "Hører du stemmer, som andre ikke hører?",
+        "de": "Hören Sie Stimmen, die andere Menschen nicht hören?"
+      }
+    },
+    "psych_006": {
+      "version": 1,
+      "text": {
+        "en": "Do you see things that other people do not see?",
+        "da": "Ser du ting, som andre ikke ser?",
+        "de": "Sehen Sie Dinge, die andere Menschen nicht sehen?"
+      }
+    },
+    "psych_007": {
+      "version": 1,
+      "text": {
+        "en": "Have you slept much less than usual over the past few days?",
+        "da": "Har du sovet betydeligt mindre end normalt de seneste dage?",
+        "de": "Haben Sie in den letzten Tagen viel weniger geschlafen als sonst?"
+      }
+    },
+    "psych_008": {
+      "version": 1,
+      "text": {
+        "en": "Are you thinking about harming yourself right now?",
+        "da": "Har du tanker om at skade dig selv lige nu?",
+        "de": "Denken Sie gerade daran, sich selbst zu verletzen?"
+      }
+    },
+    "psych_009": {
+      "version": 1,
+      "text": {
+        "en": "Are you thinking about ending your life right now?",
+        "da": "Har du tanker om at tage dit eget liv lige nu?",
+        "de": "Denken Sie gerade daran, sich das Leben zu nehmen?"
+      }
+    },
+    "psych_010": {
+      "version": 1,
+      "text": {
+        "en": "Have you made a specific plan to end your life?",
+        "da": "Har du lagt en konkret plan om at tage dit eget liv?",
+        "de": "Haben Sie einen konkreten Plan gemacht, sich das Leben zu nehmen?"
+      }
+    },
+    "psych_011": {
+      "version": 1,
+      "text": {
+        "en": "Do you have access to what you intend to use to harm yourself?",
+        "da": "Har du adgang til det, du har tænkt dig at bruge til at skade dig selv?",
+        "de": "Haben Sie Zugang zu dem, womit Sie sich verletzen wollen?"
+      }
+    },
+    "psych_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you done anything to harm yourself today?",
+        "da": "Har du gjort noget for at skade dig selv i dag?",
+        "de": "Haben Sie heute etwas getan, um sich selbst zu verletzen?"
+      }
+    },
+    "psych_013": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously attempted to end your life?",
+        "da": "Har du tidligere forsøgt at tage dit eget liv?",
+        "de": "Haben Sie schon einmal versucht, sich das Leben zu nehmen?"
+      }
+    },
+    "psych_014": {
+      "version": 1,
+      "text": {
+        "en": "Are you thinking about harming another person right now?",
+        "da": "Har du tanker om at skade en anden person lige nu?",
+        "de": "Denken Sie gerade daran, einen anderen Menschen zu verletzen?"
+      }
+    },
+    "psych_015": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel able to keep yourself safe right now?",
+        "da": "Føler du, at du kan holde dig selv sikker lige nu?",
+        "de": "Fühlen Sie sich gerade in der Lage, für Ihre eigene Sicherheit zu sorgen?"
+      }
+    },
+    "psych_016": {
+      "version": 1,
+      "text": {
+        "en": "Are you currently receiving care from a mental health professional?",
+        "da": "Er du i kontakt med en psykiatrisk behandler?",
+        "de": "Werden Sie derzeit von einer Fachperson für psychische Gesundheit betreut?"
+      }
+    },
+    "psych_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you previously been admitted to a psychiatric ward?",
+        "da": "Har du tidligere været indlagt på en psykiatrisk afdeling?",
+        "de": "Wurden Sie schon einmal auf einer psychiatrischen Station aufgenommen?"
+      }
+    },
+    "psych_018": {
+      "version": 1,
+      "text": {
+        "en": "Is there someone you trust whom we can contact?",
+        "da": "Er der en person, du har tillid til, som vi kan kontakte?",
+        "de": "Gibt es eine Person, der Sie vertrauen und die wir kontaktieren können?"
+      }
+    },
+    "safety_001": {
+      "version": 1,
+      "text": {
+        "en": "Are you afraid of anyone who is here right now?",
+        "da": "Er du bange for nogen, der er her lige nu?",
+        "de": "Haben Sie Angst vor jemandem, der gerade hier ist?"
+      }
+    },
+    "safety_002": {
+      "version": 1,
+      "text": {
+        "en": "Do you feel safe where you live?",
+        "da": "Føler du dig sikker der, hvor du bor?",
+        "de": "Fühlen Sie sich dort sicher, wo Sie wohnen?"
+      }
+    },
+    "safety_003": {
+      "version": 1,
+      "text": {
+        "en": "Has anyone threatened you?",
+        "da": "Har nogen truet dig?",
+        "de": "Hat Sie jemand bedroht?"
+      }
+    },
+    "safety_004": {
+      "version": 1,
+      "text": {
+        "en": "Has anyone physically hurt you?",
+        "da": "Har nogen gjort dig fysisk fortræd?",
+        "de": "Hat Ihnen jemand körperlich wehgetan?"
+      }
+    },
+    "safety_005": {
+      "version": 1,
+      "text": {
+        "en": "Has anyone touched you sexually against your will?",
+        "da": "Har nogen rørt dig seksuelt mod din vilje?",
+        "de": "Hat Sie jemand gegen Ihren Willen sexuell berührt?"
+      }
+    },
+    "safety_006": {
+      "version": 1,
+      "text": {
+        "en": "Are you afraid to go home?",
+        "da": "Er du bange for at tage hjem?",
+        "de": "Haben Sie Angst, nach Hause zu gehen?"
+      }
+    },
+    "safety_007_children": {
+      "version": 1,
+      "text": {
+        "en": "Are there children who need help right now?",
+        "da": "Er der børn, der har brug for hjælp lige nu?",
+        "de": "Gibt es Kinder, die gerade Hilfe benötigen?"
+      }
+    },
+    "safety_007_dependents": {
+      "version": 1,
+      "text": {
+        "en": "Are there other people who depend on your help right now?",
+        "da": "Er der andre personer, som er afhængige af din hjælp lige nu?",
+        "de": "Gibt es andere Menschen, die gerade auf Ihre Hilfe angewiesen sind?"
+      }
+    },
+    "safety_008": {
+      "version": 1,
+      "text": {
+        "en": "Is there anyone who can help you at home?",
+        "da": "Er der nogen, der kan hjælpe dig derhjemme?",
+        "de": "Gibt es jemanden, der Ihnen zu Hause helfen kann?"
+      }
+    },
+    "safety_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a safe place to stay tonight?",
+        "da": "Har du et sikkert sted at være i nat?",
+        "de": "Haben Sie für heute Nacht einen sicheren Aufenthaltsort?"
+      }
+    },
+    "safety_010": {
+      "version": 1,
+      "text": {
+        "en": "Would you like to speak with us somewhere other people cannot hear you?",
+        "da": "Ønsker du at tale med os et sted, hvor andre ikke kan høre dig?",
+        "de": "Möchten Sie mit uns an einem Ort sprechen, an dem andere Sie nicht hören können?"
+      }
+    },
+    "safety_011": {
+      "version": 1,
+      "text": {
+        "en": "Would you like help contacting someone you trust?",
+        "da": "Ønsker du hjælp til at kontakte en person, du stoler på?",
+        "de": "Möchten Sie Hilfe dabei, eine Person Ihres Vertrauens zu kontaktieren?"
+      }
+    },
+    "pediatric_003": {
+      "version": 1,
+      "text": {
+        "en": "How old is the child?",
+        "da": "Hvor gammelt er barnet?",
+        "de": "Wie alt ist das Kind?"
+      }
+    },
+    "pediatric_004": {
+      "version": 1,
+      "text": {
+        "en": "Has the child been more lethargic than usual?",
+        "da": "Har barnet været mere sløvt end normalt?",
+        "de": "War das Kind teilnahmsloser als sonst?"
+      }
+    },
+    "pediatric_005": {
+      "version": 1,
+      "text": {
+        "en": "Is the child harder to wake than usual?",
+        "da": "Er barnet sværere at vække end normalt?",
+        "de": "Ist das Kind schwerer zu wecken als sonst?"
+      }
+    },
+    "pediatric_006": {
+      "version": 1,
+      "text": {
+        "en": "Has the child been more irritable than usual?",
+        "da": "Har barnet været mere irritabelt end normalt?",
+        "de": "War das Kind reizbarer als sonst?"
+      }
+    },
+    "pediatric_007": {
+      "version": 1,
+      "text": {
+        "en": "Has the child been crying in a way that is unusual for them?",
+        "da": "Har barnet grædt på en måde, der er usædvanlig for barnet?",
+        "de": "Hat das Kind auf eine für es ungewöhnliche Weise geweint?"
+      }
+    },
+    "pediatric_008": {
+      "version": 1,
+      "text": {
+        "en": "Has the child been difficult to comfort?",
+        "da": "Har barnet været svært at trøste?",
+        "de": "War das Kind schwer zu trösten?"
+      }
+    },
+    "pediatric_009": {
+      "version": 1,
+      "text": {
+        "en": "Has the child had difficulty breathing?",
+        "da": "Har barnet haft svært ved at trække vejret?",
+        "de": "Hatte das Kind Atemnot?"
+      }
+    },
+    "pediatric_010": {
+      "version": 1,
+      "text": {
+        "en": "Has the child had pauses in breathing?",
+        "da": "Har barnet haft pauser i vejrtrækningen?",
+        "de": "Hatte das Kind Atempausen?"
+      }
+    },
+    "pediatric_011": {
+      "version": 1,
+      "text": {
+        "en": "Has the child had a fever?",
+        "da": "Har barnet haft feber?",
+        "de": "Hatte das Kind Fieber?"
+      }
+    },
+    "pediatric_012": {
+      "version": 1,
+      "text": {
+        "en": "Have you measured the child's temperature?",
+        "da": "Har I målt barnets temperatur?",
+        "de": "Haben Sie die Temperatur des Kindes gemessen?"
+      }
+    },
+    "pediatric_013": {
+      "version": 1,
+      "text": {
+        "en": "What temperature did you measure in the child in degrees Celsius?",
+        "da": "Hvilken temperatur målte I hos barnet i grader Celsius?",
+        "de": "Welche Temperatur haben Sie beim Kind in Grad Celsius gemessen?"
+      }
+    },
+    "pediatric_014": {
+      "version": 1,
+      "text": {
+        "en": "Has the child had a seizure?",
+        "da": "Har barnet haft kramper?",
+        "de": "Hatte das Kind einen Krampfanfall?"
+      }
+    },
+    "pediatric_015": {
+      "version": 1,
+      "text": {
+        "en": "Has the child vomited?",
+        "da": "Har barnet kastet op?",
+        "de": "Hat das Kind erbrochen?"
+      }
+    },
+    "pediatric_016": {
+      "version": 1,
+      "text": {
+        "en": "Has the child had green vomit?",
+        "da": "Har barnet haft grønt opkast?",
+        "de": "Hat das Kind grün erbrochen?"
+      }
+    },
+    "pediatric_017": {
+      "version": 1,
+      "text": {
+        "en": "Has the child had diarrhoea?",
+        "da": "Har barnet haft diarré?",
+        "de": "Hatte das Kind Durchfall?"
+      }
+    },
+    "pediatric_018": {
+      "version": 1,
+      "text": {
+        "en": "Has the child drunk less than usual?",
+        "da": "Har barnet drukket mindre end normalt?",
+        "de": "Hat das Kind weniger getrunken als sonst?"
+      }
+    },
+    "pediatric_019": {
+      "version": 1,
+      "text": {
+        "en": "Has the child eaten less than usual?",
+        "da": "Har barnet spist mindre end normalt?",
+        "de": "Hat das Kind weniger gegessen als sonst?"
+      }
+    },
+    "pediatric_020": {
+      "version": 1,
+      "text": {
+        "en": "When did the child last drink?",
+        "da": "Hvornår drak barnet sidst?",
+        "de": "Wann hat das Kind zuletzt getrunken?"
+      }
+    },
+    "pediatric_021_urination": {
+      "version": 1,
+      "text": {
+        "en": "When did the child last urinate?",
+        "da": "Hvornår tissede barnet sidst?",
+        "de": "Wann hat das Kind zuletzt Wasser gelassen?"
+      }
+    },
+    "pediatric_021_nappy": {
+      "version": 1,
+      "text": {
+        "en": "When did the child last have a wet nappy?",
+        "da": "Hvornår havde barnet sidst en våd ble?",
+        "de": "Wann hatte das Kind zuletzt eine nasse Windel?"
+      }
+    },
+    "pediatric_022": {
+      "version": 1,
+      "text": {
+        "en": "Has the child had fewer wet nappies than usual?",
+        "da": "Har barnet haft færre våde bleer end normalt?",
+        "de": "Hatte das Kind weniger nasse Windeln als sonst?"
+      }
+    },
+    "pediatric_023": {
+      "version": 1,
+      "text": {
+        "en": "Does the child have any known medical conditions?",
+        "da": "Har barnet kendte sygdomme?",
+        "de": "Sind bei dem Kind Erkrankungen bekannt?"
+      }
+    },
+    "pediatric_024": {
+      "version": 1,
+      "text": {
+        "en": "Does the child have any known allergies?",
+        "da": "Har barnet kendte allergier?",
+        "de": "Sind bei dem Kind Allergien bekannt?"
+      }
+    },
+    "pediatric_025": {
+      "version": 1,
+      "text": {
+        "en": "Does the child take medication regularly?",
+        "da": "Får barnet fast medicin?",
+        "de": "Nimmt das Kind regelmäßig Medikamente?"
+      }
+    },
+    "pediatric_026_fever": {
+      "version": 1,
+      "text": {
+        "en": "Has the child received medicine for fever today?",
+        "da": "Har barnet fået medicin mod feber i dag?",
+        "de": "Hat das Kind heute Medikamente gegen Fieber bekommen?"
+      }
+    },
+    "pediatric_026_pain": {
+      "version": 1,
+      "text": {
+        "en": "Has the child received pain medication today?",
+        "da": "Har barnet fået smertestillende medicin i dag?",
+        "de": "Hat das Kind heute Schmerzmittel bekommen?"
+      }
+    },
+    "pediatric_027_fever": {
+      "version": 1,
+      "text": {
+        "en": "When did the child last receive medicine for fever?",
+        "da": "Hvornår fik barnet sidst medicin mod feber?",
+        "de": "Wann hat das Kind zuletzt Medikamente gegen Fieber bekommen?"
+      }
+    },
+    "pediatric_027_pain": {
+      "version": 1,
+      "text": {
+        "en": "When did the child last receive pain medication?",
+        "da": "Hvornår fik barnet sidst smertestillende medicin?",
+        "de": "Wann hat das Kind zuletzt Schmerzmittel bekommen?"
+      }
+    },
+    "pediatric_028": {
+      "version": 1,
+      "text": {
+        "en": "Was the child born prematurely?",
+        "da": "Er barnet født for tidligt?",
+        "de": "Wurde das Kind zu früh geboren?"
+      }
+    },
+    "pediatric_029": {
+      "version": 1,
+      "text": {
+        "en": "Has the child been injured?",
+        "da": "Har barnet været udsat for en skade?",
+        "de": "Wurde das Kind verletzt?"
+      }
+    },
+    "pediatric_030": {
+      "version": 1,
+      "text": {
+        "en": "Could the child have swallowed something that is not food?",
+        "da": "Har barnet muligvis slugt noget, som ikke er mad?",
+        "de": "Könnte das Kind etwas verschluckt haben, das kein Lebensmittel ist?"
+      }
+    },
+    "witness_001": {
+      "version": 1,
+      "text": {
+        "en": "Did you see what happened?",
+        "da": "Så du, hvad der skete?",
+        "de": "Haben Sie gesehen, was passiert ist?"
+      }
+    },
+    "witness_002": {
+      "version": 1,
+      "text": {
+        "en": "Did you find the person after the event?",
+        "da": "Fandt du personen efter hændelsen?",
+        "de": "Haben Sie die Person nach dem Ereignis gefunden?"
+      }
+    },
+    "witness_003": {
+      "version": 1,
+      "text": {
+        "en": "When did you last see the person in their usual state?",
+        "da": "Hvornår så du sidst personen i sin sædvanlige tilstand?",
+        "de": "Wann haben Sie die Person zuletzt in ihrem gewohnten Zustand gesehen?"
+      }
+    },
+    "witness_004": {
+      "version": 1,
+      "text": {
+        "en": "Was the person unconscious when you found them?",
+        "da": "Var personen bevidstløs, da du fandt vedkommende?",
+        "de": "War die Person bewusstlos, als Sie sie gefunden haben?"
+      }
+    },
+    "witness_005": {
+      "version": 1,
+      "text": {
+        "en": "Did you see the person lose consciousness?",
+        "da": "Så du, at personen mistede bevidstheden?",
+        "de": "Haben Sie gesehen, wie die Person das Bewusstsein verloren hat?"
+      }
+    },
+    "witness_006": {
+      "version": 1,
+      "text": {
+        "en": "Did you see uncontrolled jerking movements in the person's body?",
+        "da": "Så du ukontrollerede ryk i personens krop?",
+        "de": "Haben Sie unkontrollierte Zuckungen am Körper der Person gesehen?"
+      }
+    },
+    "witness_007": {
+      "version": 1,
+      "text": {
+        "en": "How long did the uncontrolled jerking movements last?",
+        "da": "Hvor længe varede de ukontrollerede ryk?",
+        "de": "Wie lange haben die unkontrollierten Zuckungen gedauert?"
+      }
+    },
+    "witness_008": {
+      "version": 1,
+      "text": {
+        "en": "Has the person been confused since the event?",
+        "da": "Har personen været forvirret efter hændelsen?",
+        "de": "War die Person seit dem Ereignis verwirrt?"
+      }
+    },
+    "witness_009": {
+      "version": 1,
+      "text": {
+        "en": "Has the person received medication since the symptoms started?",
+        "da": "Har personen fået medicin, siden symptomerne begyndte?",
+        "de": "Hat die Person seit Beginn der Beschwerden Medikamente bekommen?"
+      }
+    },
+    "witness_010": {
+      "version": 1,
+      "text": {
+        "en": "Has anyone performed CPR on the person?",
+        "da": "Har nogen givet personen hjertelungeredning?",
+        "de": "Hat jemand bei der Person eine Herz-Lungen-Wiederbelebung durchgeführt?"
+      }
+    },
+    "witness_011": {
+      "version": 1,
+      "text": {
+        "en": "Has anyone used a defibrillator on the person?",
+        "da": "Har nogen brugt en hjertestarter på personen?",
+        "de": "Hat jemand bei der Person einen Defibrillator eingesetzt?"
+      }
+    },
+    "witness_012": {
+      "version": 1,
+      "text": {
+        "en": "Do you know the person's usual level of functioning?",
+        "da": "Kender du personens sædvanlige funktionsniveau?",
+        "de": "Wissen Sie, wie gut die Person ihren Alltag normalerweise bewältigen kann?"
+      }
+    },
+    "witness_013": {
+      "version": 1,
+      "text": {
+        "en": "Can you show us the person's medication list?",
+        "da": "Kan du vise os personens medicinliste?",
+        "de": "Können Sie uns den Medikamentenplan der Person zeigen?"
+      }
+    },
+    "exam_001": {
+      "version": 1,
+      "text": {
+        "en": "I would like to measure your blood pressure.",
+        "da": "Jeg vil gerne måle dit blodtryk.",
+        "de": "Ich möchte Ihren Blutdruck messen."
+      }
+    },
+    "exam_002": {
+      "version": 1,
+      "text": {
+        "en": "I would like to measure your blood glucose.",
+        "da": "Jeg vil gerne måle dit blodsukker.",
+        "de": "Ich möchte Ihren Blutzucker messen."
+      }
+    },
+    "exam_003": {
+      "version": 1,
+      "text": {
+        "en": "I would like to measure your temperature.",
+        "da": "Jeg vil gerne måle din temperatur.",
+        "de": "Ich möchte Ihre Temperatur messen."
+      }
+    },
+    "exam_004": {
+      "version": 1,
+      "text": {
+        "en": "I would like to measure the oxygen saturation in your blood.",
+        "da": "Jeg vil gerne måle iltmætningen i dit blod.",
+        "de": "Ich möchte die Sauerstoffsättigung in Ihrem Blut messen."
+      }
+    },
+    "exam_005": {
+      "version": 1,
+      "text": {
+        "en": "I would like to listen to your breathing.",
+        "da": "Jeg vil gerne lytte på din vejrtrækning.",
+        "de": "Ich möchte Ihre Atmung abhören."
+      }
+    },
+    "exam_006": {
+      "version": 1,
+      "text": {
+        "en": "I would like to examine your abdomen.",
+        "da": "Jeg vil gerne undersøge din mave.",
+        "de": "Ich möchte Ihren Bauch untersuchen."
+      }
+    },
+    "exam_007": {
+      "version": 1,
+      "text": {
+        "en": "I would like to examine your pupils using a light.",
+        "da": "Jeg vil gerne undersøge dine pupiller med lys.",
+        "de": "Ich möchte Ihre Pupillen mit einer Lampe untersuchen."
+      }
+    },
+    "exam_008": {
+      "version": 1,
+      "text": {
+        "en": "I would like to place electrodes on your chest to record your heart's electrical activity.",
+        "da": "Jeg vil gerne sætte elektroder på din brystkasse for at registrere hjertets elektriske aktivitet.",
+        "de": "Ich möchte Elektroden auf Ihrem Brustkorb anbringen, um die elektrische Aktivität Ihres Herzens aufzuzeichnen."
+      }
+    },
+    "exam_009": {
+      "version": 1,
+      "text": {
+        "en": "I would like to feel the area where you have pain.",
+        "da": "Jeg vil gerne mærke på det område, hvor du har ondt.",
+        "de": "Ich möchte die Stelle abtasten, an der Sie Schmerzen haben."
+      }
+    },
+    "exam_010": {
+      "version": 1,
+      "text": {
+        "en": "I would like to examine your sense of touch.",
+        "da": "Jeg vil gerne undersøge din følesans.",
+        "de": "Ich möchte Ihr Berührungsempfinden untersuchen."
+      }
+    },
+    "exam_011": {
+      "version": 1,
+      "text": {
+        "en": "Let me know if it hurts.",
+        "da": "Sig til, hvis det gør ondt.",
+        "de": "Sagen Sie mir, wenn es weh tut."
+      }
+    },
+    "exam_012": {
+      "version": 1,
+      "text": {
+        "en": "Breathe as you normally do.",
+        "da": "Træk vejret, som du plejer.",
+        "de": "Atmen Sie wie gewohnt."
+      }
+    },
+    "exam_013": {
+      "version": 1,
+      "text": {
+        "en": "Take a deep breath in.",
+        "da": "Træk vejret dybt ind.",
+        "de": "Atmen Sie tief ein."
+      }
+    },
+    "exam_014": {
+      "version": 1,
+      "text": {
+        "en": "Breathe out slowly.",
+        "da": "Pust langsomt ud.",
+        "de": "Atmen Sie langsam aus."
+      }
+    },
+    "exam_015": {
+      "version": 1,
+      "text": {
+        "en": "Open your mouth.",
+        "da": "Åbn munden.",
+        "de": "Öffnen Sie Ihren Mund."
+      }
+    },
+    "exam_016": {
+      "version": 1,
+      "text": {
+        "en": "Stick out your tongue.",
+        "da": "Ræk tungen ud.",
+        "de": "Strecken Sie Ihre Zunge heraus."
+      }
+    },
+    "exam_017": {
+      "version": 1,
+      "text": {
+        "en": "Look at me.",
+        "da": "Kig på mig.",
+        "de": "Sehen Sie mich an."
+      }
+    },
+    "exam_018": {
+      "version": 1,
+      "text": {
+        "en": "Follow my finger with your eyes.",
+        "da": "Følg min finger med øjnene.",
+        "de": "Folgen Sie meinem Finger mit den Augen."
+      }
+    },
+    "exam_019": {
+      "version": 1,
+      "text": {
+        "en": "Close your eyes.",
+        "da": "Luk øjnene.",
+        "de": "Schließen Sie Ihre Augen."
+      }
+    },
+    "exam_020": {
+      "version": 1,
+      "text": {
+        "en": "Open your eyes.",
+        "da": "Åbn øjnene.",
+        "de": "Öffnen Sie Ihre Augen."
+      }
+    },
+    "exam_021_smile": {
+      "version": 1,
+      "text": {
+        "en": "Please smile.",
+        "da": "Smil, tak.",
+        "de": "Bitte lächeln Sie."
+      }
+    },
+    "exam_021_teeth": {
+      "version": 1,
+      "text": {
+        "en": "Show me your teeth.",
+        "da": "Vis mig dine tænder.",
+        "de": "Zeigen Sie mir Ihre Zähne."
+      }
+    },
+    "exam_022": {
+      "version": 1,
+      "text": {
+        "en": "Raise both arms.",
+        "da": "Løft begge arme.",
+        "de": "Heben Sie beide Arme."
+      }
+    },
+    "exam_023": {
+      "version": 1,
+      "text": {
+        "en": "Squeeze my hands.",
+        "da": "Klem om mine hænder.",
+        "de": "Drücken Sie meine Hände."
+      }
+    },
+    "exam_024": {
+      "version": 1,
+      "text": {
+        "en": "Lift this leg if you can.",
+        "da": "Løft dette ben, hvis du kan.",
+        "de": "Heben Sie dieses Bein, wenn Sie können."
+      }
+    },
+    "exam_025": {
+      "version": 1,
+      "text": {
+        "en": "Move your toes if you can.",
+        "da": "Bevæg tæerne, hvis du kan.",
+        "de": "Bewegen Sie Ihre Zehen, wenn Sie können."
+      }
+    },
+    "exam_026": {
+      "version": 1,
+      "text": {
+        "en": "Move your fingers if you can.",
+        "da": "Bevæg fingrene, hvis du kan.",
+        "de": "Bewegen Sie Ihre Finger, wenn Sie können."
+      }
+    },
+    "exam_027": {
+      "version": 1,
+      "text": {
+        "en": "Can you feel me touching you here?",
+        "da": "Kan du mærke, at jeg rører ved dig her?",
+        "de": "Spüren Sie, dass ich Sie hier berühre?"
+      }
+    },
+    "exam_028": {
+      "version": 1,
+      "text": {
+        "en": "Does the touch feel the same on both sides?",
+        "da": "Føles berøringen ens på begge sider?",
+        "de": "Fühlt sich die Berührung auf beiden Seiten gleich an?"
+      }
+    },
+    "exam_029": {
+      "version": 1,
+      "text": {
+        "en": "Does it hurt here?",
+        "da": "Gør det ondt her?",
+        "de": "Tut es hier weh?"
+      }
+    },
+    "exam_030": {
+      "version": 1,
+      "text": {
+        "en": "Would you like me to stop the examination now?",
+        "da": "Vil du have, at jeg stopper undersøgelsen nu?",
+        "de": "Möchten Sie, dass ich die Untersuchung jetzt beende?"
+      }
+    },
+    "treatment_001": {
+      "version": 1,
+      "text": {
+        "en": "I would like to place a small plastic cannula into a vein.",
+        "da": "Jeg vil gerne lægge en lille plastikkanyle i en blodåre.",
+        "de": "Ich möchte eine kleine Kunststoffkanüle in eine Vene legen."
+      }
+    },
+    "treatment_002": {
+      "version": 1,
+      "text": {
+        "en": "You may feel a brief prick from the needle.",
+        "da": "Du kan mærke et kort stik fra nålen.",
+        "de": "Sie spüren möglicherweise einen kurzen Nadelstich."
+      }
+    },
+    "treatment_003": {
+      "version": 1,
+      "text": {
+        "en": "I would like to take a blood sample.",
+        "da": "Jeg vil gerne tage en blodprøve.",
+        "de": "Ich möchte Ihnen Blut abnehmen."
+      }
+    },
+    "treatment_004": {
+      "version": 1,
+      "text": {
+        "en": "I would like to give you fluid through a vein.",
+        "da": "Jeg vil gerne give dig væske gennem en blodåre.",
+        "de": "Ich möchte Ihnen Flüssigkeit über eine Vene geben."
+      }
+    },
+    "treatment_005": {
+      "version": 1,
+      "text": {
+        "en": "I would like to give you medication to relieve pain.",
+        "da": "Jeg vil gerne give dig medicin mod smerter.",
+        "de": "Ich möchte Ihnen ein Medikament zur Schmerzlinderung geben."
+      }
+    },
+    "treatment_006": {
+      "version": 1,
+      "text": {
+        "en": "I would like to give you medication to relieve nausea.",
+        "da": "Jeg vil gerne give dig medicin mod kvalme.",
+        "de": "Ich möchte Ihnen ein Medikament gegen Übelkeit geben."
+      }
+    },
+    "treatment_007": {
+      "version": 1,
+      "text": {
+        "en": "I would like to give you oxygen.",
+        "da": "Jeg vil gerne give dig ilt.",
+        "de": "Ich möchte Ihnen Sauerstoff geben."
+      }
+    },
+    "treatment_008": {
+      "version": 1,
+      "text": {
+        "en": "I would like to give you medication that you need to breathe in.",
+        "da": "Jeg vil gerne give dig medicin, som du skal indånde.",
+        "de": "Ich möchte Ihnen ein Medikament geben, das Sie einatmen müssen."
+      }
+    },
+    "treatment_009": {
+      "version": 1,
+      "text": {
+        "en": "I would like to put a dressing on your wound.",
+        "da": "Jeg vil gerne lægge en forbinding på dit sår.",
+        "de": "Ich möchte Ihre Wunde verbinden."
+      }
+    },
+    "treatment_010": {
+      "version": 1,
+      "text": {
+        "en": "I would like to support the injured part of your body with a splint.",
+        "da": "Jeg vil gerne støtte den skadede kropsdel med en skinne.",
+        "de": "Ich möchte den verletzten Körperteil mit einer Schiene stützen."
+      }
+    },
+    "treatment_011": {
+      "version": 1,
+      "text": {
+        "en": "I would like to help you change position.",
+        "da": "Jeg vil gerne hjælpe dig med at ændre stilling.",
+        "de": "Ich möchte Ihnen helfen, Ihre Körperposition zu ändern."
+      }
+    },
+    "treatment_012": {
+      "version": 1,
+      "text": {
+        "en": "Wait until we help you before standing up.",
+        "da": "Vent med at rejse dig, indtil vi hjælper dig.",
+        "de": "Warten Sie mit dem Aufstehen, bis wir Ihnen helfen."
+      }
+    },
+    "treatment_013": {
+      "version": 1,
+      "text": {
+        "en": "Try to keep the injured part of your body still.",
+        "da": "Prøv at holde den skadede kropsdel i ro.",
+        "de": "Versuchen Sie, den verletzten Körperteil ruhig zu halten."
+      }
+    },
+    "treatment_014_food": {
+      "version": 1,
+      "text": {
+        "en": "Wait before eating until we have agreed that you may.",
+        "da": "Vent med at spise, indtil vi har aftalt det.",
+        "de": "Warten Sie mit dem Essen, bis wir vereinbart haben, dass Sie essen dürfen."
+      }
+    },
+    "treatment_014_drink": {
+      "version": 1,
+      "text": {
+        "en": "Wait before drinking until we have agreed that you may.",
+        "da": "Vent med at drikke, indtil vi har aftalt det.",
+        "de": "Warten Sie mit dem Trinken, bis wir vereinbart haben, dass Sie trinken dürfen."
+      }
+    },
+    "treatment_015": {
+      "version": 1,
+      "text": {
+        "en": "Let me know if you start feeling worse.",
+        "da": "Sig til, hvis du får det værre.",
+        "de": "Sagen Sie mir, wenn es Ihnen schlechter geht."
+      }
+    },
+    "treatment_016": {
+      "version": 1,
+      "text": {
+        "en": "Let me know if you develop new symptoms.",
+        "da": "Sig til, hvis du får nye symptomer.",
+        "de": "Sagen Sie mir, wenn neue Beschwerden auftreten."
+      }
+    },
+    "treatment_017": {
+      "version": 1,
+      "text": {
+        "en": "Have you felt better since the treatment?",
+        "da": "Har du fået det bedre siden behandlingen?",
+        "de": "Geht es Ihnen seit der Behandlung besser?"
+      }
+    },
+    "treatment_018": {
+      "version": 1,
+      "text": {
+        "en": "Have you felt worse since the treatment?",
+        "da": "Har du fået det værre siden behandlingen?",
+        "de": "Geht es Ihnen seit der Behandlung schlechter?"
+      }
+    },
+    "treatment_019": {
+      "version": 1,
+      "text": {
+        "en": "Have you developed new symptoms after the treatment?",
+        "da": "Har du nye symptomer efter behandlingen?",
+        "de": "Haben Sie nach der Behandlung neue Beschwerden bekommen?"
+      }
+    },
+    "treatment_020": {
+      "version": 1,
+      "text": {
+        "en": "Do you have questions about the treatment we have discussed?",
+        "da": "Har du spørgsmål om den behandling, vi har talt om?",
+        "de": "Haben Sie Fragen zu der Behandlung, über die wir gesprochen haben?"
+      }
+    },
+    "treatment_021": {
+      "version": 1,
+      "text": {
+        "en": "Would you like an interpreter before we discuss the treatment further?",
+        "da": "Vil du have en tolk, før vi taler videre om behandlingen?",
+        "de": "Möchten Sie einen Dolmetscher, bevor wir weiter über die Behandlung sprechen?"
+      }
+    },
+    "transport_001": {
+      "version": 1,
+      "text": {
+        "en": "We would like to help you onto the stretcher.",
+        "da": "Vi vil gerne hjælpe dig over på båren.",
+        "de": "Wir möchten Ihnen auf die Trage helfen."
+      }
+    },
+    "transport_002": {
+      "version": 1,
+      "text": {
+        "en": "We would like to take you to hospital.",
+        "da": "Vi vil gerne tage dig med til hospitalet.",
+        "de": "Wir möchten Sie ins Krankenhaus bringen."
+      }
+    },
+    "transport_003": {
+      "version": 1,
+      "text": {
+        "en": "We are on our way to hospital.",
+        "da": "Vi er på vej til hospitalet.",
+        "de": "Wir sind auf dem Weg ins Krankenhaus."
+      }
+    },
+    "transport_004": {
+      "version": 1,
+      "text": {
+        "en": "We have arrived at the hospital.",
+        "da": "Vi er ankommet til hospitalet.",
+        "de": "Wir sind im Krankenhaus angekommen."
+      }
+    },
+    "transport_005": {
+      "version": 1,
+      "text": {
+        "en": "We will tell the hospital staff what you have told us.",
+        "da": "Vi vil fortælle personalet på hospitalet, hvad du har fortalt os.",
+        "de": "Wir werden dem Krankenhauspersonal sagen, was Sie uns erzählt haben."
+      }
+    },
+    "transport_006": {
+      "version": 1,
+      "text": {
+        "en": "Do you have a phone with you?",
+        "da": "Har du en telefon med dig?",
+        "de": "Haben Sie ein Telefon dabei?"
+      }
+    },
+    "transport_007": {
+      "version": 1,
+      "text": {
+        "en": "Do you have your glasses with you?",
+        "da": "Har du dine briller med dig?",
+        "de": "Haben Sie Ihre Brille dabei?"
+      }
+    },
+    "transport_008": {
+      "version": 1,
+      "text": {
+        "en": "Do you have your hearing aid with you?",
+        "da": "Har du dit høreapparat med dig?",
+        "de": "Haben Sie Ihr Hörgerät dabei?"
+      }
+    },
+    "transport_009": {
+      "version": 1,
+      "text": {
+        "en": "Do you have your medication with you?",
+        "da": "Har du din medicin med dig?",
+        "de": "Haben Sie Ihre Medikamente dabei?"
+      }
+    },
+    "transport_010": {
+      "version": 1,
+      "text": {
+        "en": "Do you have your keys with you?",
+        "da": "Har du dine nøgler med dig?",
+        "de": "Haben Sie Ihre Schlüssel dabei?"
+      }
+    },
+    "transport_011": {
+      "version": 1,
+      "text": {
+        "en": "Is there anyone you would like us to contact?",
+        "da": "Er der nogen, du ønsker, at vi kontakter?",
+        "de": "Gibt es jemanden, den wir für Sie kontaktieren sollen?"
+      }
+    },
+    "transport_012": {
+      "version": 1,
+      "text": {
+        "en": "Do you need someone to look after your pet?",
+        "da": "Har du brug for, at nogen tager sig af dit kæledyr?",
+        "de": "Benötigen Sie jemanden, der sich um Ihr Haustier kümmert?"
+      }
+    },
+    "transport_013": {
+      "version": 1,
+      "text": {
+        "en": "Do you need help securing your home?",
+        "da": "Har du brug for hjælp til at sikre dit hjem?",
+        "de": "Benötigen Sie Hilfe dabei, Ihr Zuhause zu sichern?"
+      }
+    },
+    "transport_014": {
+      "version": 1,
+      "text": {
+        "en": "Is there anyone who needs to know that you are going to hospital?",
+        "da": "Er der nogen, der har brug for at vide, at du tager på hospitalet?",
+        "de": "Gibt es jemanden, der wissen muss, dass Sie ins Krankenhaus fahren?"
+      }
+    },
+    "transport_015_religion": {
+      "version": 1,
+      "text": {
+        "en": "Is there anything in particular we should be aware of regarding your religion?",
+        "da": "Er der noget særligt, vi skal være opmærksomme på af hensyn til din religion?",
+        "de": "Gibt es etwas Besonderes, das wir bezüglich Ihrer Religion beachten sollten?"
+      }
+    },
+    "transport_015_culture": {
+      "version": 1,
+      "text": {
+        "en": "Is there anything in particular we should be aware of regarding your culture?",
+        "da": "Er der noget særligt, vi skal være opmærksomme på af hensyn til din kultur?",
+        "de": "Gibt es etwas Besonderes, das wir bezüglich Ihrer Kultur beachten sollten?"
+      }
+    },
+    "transport_016": {
+      "version": 1,
+      "text": {
+        "en": "Would you like us to explain what happens next?",
+        "da": "Vil du gerne have, at vi forklarer, hvad der sker nu?",
+        "de": "Möchten Sie, dass wir erklären, was als Nächstes passiert?"
+      }
+    }
+  },
+  "contentHash": "8d9791c1016cd8a885cc3b266c7a8668dc333588d3c28598fb9e861040cfe4e8"
+}

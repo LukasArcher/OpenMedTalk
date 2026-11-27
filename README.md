@@ -6,7 +6,9 @@
 
 An open-source, offline-first, fixed-phrase communication aid for acute healthcare across languages and countries. The official application is intended to remain free, without advertising or subscriptions.
 
-**Status: planning and clinical content draft. Not for patient use.** No working mobile application or validated translation catalog is represented by this repository yet.
+**Status: mobile implementation and clinical content draft. Not for patient use.** The internal mobile app uses unreviewed English/Danish source content and a German AI-generated development translation. No clinical validation or public release is represented by this repository.
+
+For local setup, versioned content updates and internal testing, see [Mobile development](docs/MOBILE-DEVELOPMENT.md). Actual test results and remaining checks are recorded in [Implementation progress](docs/IMPLEMENTATION.md).
 
 ## Start here
 
@@ -21,7 +23,7 @@ For contributors and coding agents, read [AGENTS.md](AGENTS.md) first, then:
 | [Implementation plan](docs/IMPLEMENTATION.md) | Ordered milestones and acceptance tests |
 | [Clinical source draft](docs/clinical/source-library-v0.2.draft.json) | 579 bilingual items; not approved (v0.1 retained as archive) |
 | [Brand assets](assets/brand/README.md) | Logo and design tokens |
-| [Design references](docs/design/references/README.md) | Reference image inventory; original PNG upload pending |
+| [Design references](docs/design/references/README.md) | All eight approved PNG reference boards |
 
 Start with milestone 0. Do not treat the mockups as a clinical specification or the seed data as validated. The latest written requirements override the original draft and artwork.
 

@@ -1,0 +1,28 @@
+{
+  "name": "openmedtalk",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@11.28.11",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "pnpm lint && pnpm typecheck && pnpm test",
+    "mobile": "pnpm --dir apps/mobile start",
+    "test:ui": "playwright test",
+    "validate:release": "tsx scripts/validate-release.ts",
+    "data:ui": "tsx scripts/sync-ui.ts && tsx scripts/hash-patient-bundle.ts",
+    "data:patient-hash": "tsx scripts/hash-patient-bundle.ts",
+    "data:source-drafts": "tsx scripts/sync-patient-drafts.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.2",
+    "eslint": "9.39.2",
+    "typescript-eslint": "8.56.1",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18",
+    "tsx": "4.21.0",
+    "@types/node": "24.10.13",
+    "@playwright/test": "1.58.2"
+  }
+}

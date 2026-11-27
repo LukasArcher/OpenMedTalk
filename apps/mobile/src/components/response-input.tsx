@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { View, Text } from 'react-native';
-import { Host, Switch } from '@expo/ui';
+import Svg, { Circle, Path } from 'react-native-svg';
+import { Host, Switch, Slider } from '@expo/ui';
 import type { Answer, BodyPoint, Locale } from '../../../../packages/schema/types';
 import { patientResponseTypes, patientNonanswers } from '../../../../packages/translations/patient';
 import { validateAnswer } from '../../../../packages/schema/answer';
@@ -98,19 +99,18 @@ export function ResponseInput({
             {value || '—'}
             {value !== '' ? ' / 10' : ''}
           </Text>
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
-            {Array.from({ length: 11 }, (_, n) => (
-              <View key={n} style={{ minWidth: 52, flexGrow: 1 }}>
-                <Button
-                  label={String(n)}
-                  selected={value === String(n)}
-                  onPress={() => {
-                    setValue(String(n));
-                    setError(false);
-                  }}
-                />
-              </View>
-            ))}
+          <Host colorScheme={isDark ? 'dark' : 'light'} seedColor={colors.brand} matchContents>
+            <Slider value={value === '' ? 0 : Number(value)} min={0} max={10} step={1}
+              onValueChange={(next) => { setValue(String(next)); setError(false); }} />
+          </Host>
+          <Button label="0" selected={value === '0'} onPress={() => setValue('0')} />
+          <View accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            {[0, 2, 4, 6, 8, 10].map((level) => <Svg key={level} width={40} height={40} viewBox="0 0 40 40">
+              <Circle cx={20} cy={20} r={18} fill="none" stroke={colors.secondary} strokeWidth={1.5} />
+              <Circle cx={14} cy={15} r={1.5} fill={colors.secondary} />
+              <Circle cx={26} cy={15} r={1.5} fill={colors.secondary} />
+              <Path d={`M 11 27 Q 20 ${34 - level * 1.8} 29 27`} fill="none" stroke={colors.secondary} strokeWidth={1.5} />
+            </Svg>)}
           </View>
           <Stack row>
             {spec.anchors!.map((a) => (

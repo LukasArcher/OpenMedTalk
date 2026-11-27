@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { router } from 'expo-router';
+import { router, usePathname } from 'expo-router';
 import { useApp } from '../state/app-state';
 import type { Locale } from '../../../../packages/schema/types';
 import { ui } from '../../../../packages/translations/ui';
@@ -185,6 +185,8 @@ export function Page({
   locale?: Locale;
 }) {
   const { colors, t: defaultText, settings } = useApp();
+  const pathname = usePathname();
+  const showNavigation = ['/categories', '/questions', '/log'].includes(pathname);
   const direction =
     locales.find((l) => l.id === (locale ?? settings.uiLocale))?.direction === 'rtl'
       ? 'rtl'
@@ -230,6 +232,11 @@ export function Page({
       ) : (
         body
       )}
+      {showNavigation && <View style={[styles.footer, { flexDirection: 'row', borderTopWidth: 1, borderColor: colors.border }]}>{[
+        { label: t.categories, path: '/categories' as const },
+        { label: t.log, path: '/log' as const },
+        { label: t.favorites, path: '/questions' as const, favorites: '1' },
+      ].map((tab) => <View key={tab.label} style={{ flex: 1 }}><Button label={tab.label} onPress={() => router.replace({ pathname: tab.path, params: tab.favorites ? { favorites: tab.favorites } : {} })} /></View>)}</View>}
       {footer && <View style={styles.footer}>{footer}</View>}
     </SafeAreaView>
   );

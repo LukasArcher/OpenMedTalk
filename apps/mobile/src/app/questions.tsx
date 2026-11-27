@@ -11,7 +11,6 @@ export default function Questions() {
   const params = useLocalSearchParams<{ category?: string; favorites?: string }>();
   const { session, settings, updateSettings, t, colors, canUndo, undo } = useApp();
   const [query, setQuery] = useState('');
-  const [secondary, setSecondary] = useState(false);
   if (!session) return <Redirect href="/" />;
   const title =
     (params.category
@@ -19,14 +18,13 @@ export default function Questions() {
       : undefined) ?? (params.favorites ? t.favorites : t.search);
   const items = searchItems(query, settings.uiLocale, params.category).filter(
     (i) =>
-      (secondary || i.presentationPriority !== 'optional_secondary') &&
+      i.presentationPriority !== 'optional_secondary' &&
       (!params.favorites || settings.questionFavorites.includes(i.id)),
   );
   return (
     <Page
       scroll={false}
       title={title}
-      actions={<Button label={t.log} onPress={() => router.push('/log')} />}
     >
       <Field
         accessibilityLabel={t.search}
@@ -75,7 +73,6 @@ export default function Questions() {
           );
         }}
       />
-      <Button label={t.secondary} selected={secondary} onPress={() => setSecondary(!secondary)} />
     </Page>
   );
 }

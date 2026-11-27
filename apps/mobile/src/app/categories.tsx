@@ -44,7 +44,6 @@ export default function Categories() {
   return (
     <Page
       title={t.categories}
-      actions={<Button label={t.log} icon="list-outline" onPress={() => router.push('/log')} />}
     >
       <Button
         label={`${t.patientLanguage}: ${languageName(patientLocale, settings.uiLocale)}`}
